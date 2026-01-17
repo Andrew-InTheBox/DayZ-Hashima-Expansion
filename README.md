@@ -50,12 +50,7 @@ Several other useful scripts are in that directory, use at your own risk and mak
 
 ### Docs files
 
-Copied and pasted into txt files from the Expansion Wiki, I use these to query with [Continue.Dev](https://www.continue.dev) in VS Code when I can't remember how to do something with market or quests.  Continue.dev is great and you can bring your own API keys, highly recommended.
-
-#### `docs/expansion_market.txt`
-
-
-#### `docs/expansion_quests.txt`
+The `docs/dayz-expansion` folder contains documentation from the Expansion Wiki. You can reference these docs using your agentic code editor to help speed building out Expansion features.
 
 
 
