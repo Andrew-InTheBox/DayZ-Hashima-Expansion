@@ -1,32 +1,42 @@
-# DayZ Chernarusplus with Expansion
+# DayZ Hashima Islands with Expansion
 
-This repository contains configuration files located in `./config` and `./mpmissions/Expansion.Chernarusplus` directories for setting up a DayZ server (version 1.25) that includes the Expansion bundle and MMG gear. The setup features market trader files and several quests.
+This repository contains configuration files located in `./config` and `./mpmissions/Expansion.chernarusplus` directories for setting up a DayZ server on the Hashima Islands map with the Expansion mod suite.
 
 ## Note on Server-Side Mods
 
-The startup batch file `start_automods.bat` automatically loads any directory starting with "@" as a mod. Therefore, server-side mods must be named differently to avoid being loaded in this manner. In this setup, server-side mods are prefixed with "_XYZ". Add your server-side mods manually to the startup batch file following this convention. The only server-side mod I'm running is `Dynamic_AI_Addon` by TrueDolphin.
+The startup batch file `start_automods.bat` automatically loads any directory starting with "@" as a mod. Therefore, server-side mods must be named differently to avoid being loaded in this manner. In this setup, server-side mods are prefixed with "_@". Add your server-side mods manually to the startup batch file following this convention.
 
 ## Required Mods
 
 The following mods are required for this project. These are located in directories at the top level of the project and start with the "@" symbol:
 
-- **BulletStacksPlusEnhanced**
-- **CF**
-- **COT**
-- **DabsFramework**
-- **DayZ-Editor-Loader**
-- **Dayz-Expansion-Animations**
-- **DayZ-Expansion-Bundle**
-- **DayZ-Expansion-Licensed**
-- **MMG-MightysMilitaryGear**
-- **PvZmoD_CustomizableZombies**
-- **MoreWolves**
-- **SNAFUWeapons**
-- **RedFalcon Helis**
-- **MetroWatchPack OG**
-- **_DayZ-Dynamic-AI-Addon** (server-side)
+- **@Admirals-Parachute-Mod**
+- **@Airborne-AI**
+- **@CF**
+- **@Community-Online-Tools**
+- **@DabsFramework**
+- **@DayZ-Expansion**
+- **@DayZ-Expansion-AI**
+- **@DayZ-Expansion-Animations**
+- **@DayZ-Expansion-Core**
+- **@DayZ-Expansion-Licensed**
+- **@DayZ-Expansion-Navigation**
+- **@DayZ-Expansion-Vehicles**
+- **@DayZ-Expansion-Weapons**
+- **@Expansion_Brake_Fix**
+- **@HashimaIslands**
+- **@HashimaIslandsAssets**
+- **@MMG-MightysMilitaryGear**
+- **@NoForceWeaponRaise**
 
-Make sure you have these mods installed to ensure full functionality of the quests and other custom features provided in this project.
+## Server-Side Mods
+
+The following are server-side only mods (prefixed with "_@"):
+
+- **_@Heatmap**
+- **_@SpawnerBubaku**
+
+Make sure you have these mods installed to ensure full functionality of the server.
 
 ## Project Structure
 
