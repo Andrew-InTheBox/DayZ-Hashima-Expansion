@@ -106,4 +106,20 @@
         <file name="dz_types_tool.xml" type="types" />
         <file name="dz_types_weapon.xml" type="types" />
     </ce>
+    
+    <ce folder="expansion_ce">
+		<file name="expansion_types.xml" type="types" />
+		<file name="expansion_spawnabletypes.xml" type="spawnabletypes" />
+		<file name="expansion_events.xml" type="events" />
+	</ce>
+
+	<ce folder="db/mmg">
+		<file name="mmg_cfgspawnabletypes.xml" type="spawnabletypes" />
+		<file name="mmg_types_ADMINGEAR.xml" type="types" />
+		<file name="mmg_bare_types.xml" type="types" />
+	</ce>
+
+	<ce folder="db/airborne_ai">
+		<file name="airborne_types.xml" type="types" />
+	</ce>
 </economycore>
