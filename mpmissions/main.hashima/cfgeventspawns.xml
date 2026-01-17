@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<eventposdef>
+    <event name="AnimalBear" />
+    <event name="AnimalCattle" />
+    <event name="AnimalDeer" />
+    <event name="AnimalHen" />
+    <event name="AnimalPig" />
+    <event name="AnimalRoeDeer" />
+    <event name="AnimalWildBoar" />
+    <event name="AnimalWolf" />
+
+    <event name="InfectedArmy" />
+    <event name="InfectedArmyHeavy" />
+    <event name="InfectedCityTier1" />
+    <event name="InfectedCityTier2" />
+    <event name="InfectedCityTier3" />
+    <event name="InfectedFirefighter" />
+    <event name="InfectedIndustrial" />
+    <event name="InfectedMedic" />
+    <event name="InfectedNBCBlack" />
+    <event name="InfectedNBCGreen" />
+    <event name="InfectedNBCPurple" />
+    <event name="InfectedNBCRed" />
+    <event name="InfectedPolice" />
+    <event name="InfectedPoliceHeavy" />
+    <event name="InfectedPrisoner" />
+    <event name="InfectedReligious" />
+    <event name="InfectedSolitude" />
+    <event name="InfectedVillageTier1" />
+    <event name="InfectedVillageTier2" />
+
+    <event name="Loot" />
+
+    <event name="TrajectoryApple" />
+    <event name="TrajectoryCanina" />
+    <event name="TrajectoryConiferous" />
+    <event name="TrajectoryDeciduous" />
+    <event name="TrajectoryHumus" />
+    <event name="TrajectoryPear" />
+    <event name="TrajectoryPlum" />
+    <event name="TrajectorySambucus" />
+    <event name="TrajectoryStones" />
+
+    <event name="StaticAirplaneCrate_1">
+        <zone smin="0" smax="0" dmin="0" dmax="0" r="0" />
+
+        <!-- StaticObj_Misc_SupplyBox1_DE  -->
+
+        <pos x="650.235229" z="4688.486328" y="46.200000" a="46.899487" />
+        <pos x="468.422882" z="4425.892578" y="46.200000" a="46.899487" />
+    </event>
+
+    <event name="StaticAirplaneCrate_2">
+        <zone smin="0" smax="0" dmin="0" dmax="0" r="0" />
+
+        <!-- StaticObj_Misc_SupplyBox2_DE  -->
+
+        <pos x="435.851776" z="4465.649902" y="46.470000" a="46.543350" />
+        <pos x="473.102448" z="4425.111328" y="46.470000" a="46.543350" />
+        <pos x="631.288391" z="4482.771484" y="51.210000" a="31.750290" />
+        <pos x="654.914795" z="4687.705566" y="46.470000" a="46.543350" />
+        <pos x="675.066528" z="4422.031250" y="87.200000" a="46.543350" />
+        <pos x="688.673706" z="4653.554688" y="46.470000" a="17.614710" />
+        <pos x="692.360352" z="4404.951172" y="68.030000" a="99.003900" />
+        <pos x="717.213379" z="4402.662109" y="46.470000" a="46.543350" />
+        <pos x="717.215515" z="4430.165527" y="68.030000" a="46.543350" />
+
+        <!-- StaticObj_Misc_SupplyBox3_DE  -->
+
+        <pos x="434.643860" z="4462.865723" y="46.470000" a="0.000000" />
+        <pos x="469.538361" z="4422.027344" y="46.470000" a="0.000000" />
+        <pos x="638.959351" z="4484.619629" y="51.210000" a="345.207000" />
+        <pos x="651.350708" z="4684.621582" y="46.470000" a="0.000000" />
+        <pos x="673.774475" z="4420.399414" y="87.200000" a="0.000000" />
+        <pos x="687.046326" z="4648.383789" y="46.470000" a="262.274320" />
+        <pos x="692.405457" z="4655.560547" y="46.470000" a="185.465790" />
+        <pos x="699.034729" z="4445.696289" y="87.200000" a="43.803890" />
+        <pos x="700.547180" z="4447.160156" y="87.200000" a="31.531130" />
+        <pos x="715.582275" z="4427.910645" y="68.030000" a="0.000000" />
+        <pos x="716.005432" z="4399.877930" y="46.470000" a="0.000000" />
+    </event>
+
+    <event name="StaticHeliCrash">
+        <zone smin="1" smax="3" dmin="3" dmax="5" r="45" />
+        <pos x="3360.286133" z="4104.120117" />
+        <pos x="3392.646729" z="2515.971436" />
+        <pos x="3392.646729" z="2515.971436" />
+        <pos x="3410.754149" z="3336.864502" />
+        <pos x="3816.163087" z="3015.093994" />
+        <pos x="4262.073242" z="928.464905" />
+        <!-- <pos x="892.821777" z="1918.907593" /> -->
+    </event>
+</eventposdef>

@@ -1,0 +1,35 @@
+/@*/
+/_@*/
+!/_@Heatmap/
+*.exe
+*.RPT
+*.ADM
+*.log
+*.dll
+*.bisign
+*.pbo
+# Allow all files in _@Heatmap including pbo, dll, bisign
+!/_@Heatmap/**/*.pbo
+!/_@Heatmap/**/*.bisign
+!/_@Heatmap/**/*.dll
+*.bin
+*.vdf
+*.ebo
+/battlefield
+/bliss
+/dta
+/keys
+/addons
+/mpmissions/Expansion.chernarusplus/storage_1/
+/appcache
+/logs
+
+*/storage_1/
+mpmissions/main.hashima/storage_1/
+*.mdmp
+cache.ch
+mpmissions/main.hashima/areaflags.map
+
+# Ignore heatmap session files except the example
+config/Heatmap/session_*.json
+!config/Heatmap/example_Heatmap.json

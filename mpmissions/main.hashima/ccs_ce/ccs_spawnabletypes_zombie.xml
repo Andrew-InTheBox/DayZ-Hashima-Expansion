@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<spawnabletypes>
+<!--
+    ╔════════════════════════════════════════╗
+    ║ CCS - SpawnableTypes - Zombie - Female ║
+    ╚════════════════════════════════════════╝
+-->
+    <type name="CCS_Hashima_Zombie_F_BlueCollar_Fat_Blue">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_BlueCollar_Fat_Green">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_BlueCollar_Fat_Red">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_BlueCollar_Fat_White">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Citizen_Normal_Beige">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Citizen_Normal_Blue">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Citizen_Normal_Brown">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Citizen_Skinny">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Clerk_Normal_Blue">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Clerk_Normal_Green">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Clerk_Normal_Red">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Clerk_Normal_White">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Clerk_Fat_Black">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Clerk_Fat_Blue">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Clerk_Fat_Gray">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Clerk_Fat_White">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Doctor_Skinny">
+        <attachments preset="attachmentsHatMedic" />
+        <cargo preset="cargoToolMedic" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Hiker_Skinny_Blue">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Hiker_Skinny_Gray">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Hiker_Skinny_Green">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Hiker_Skinny_Red">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Jogger_Skinny_Blue">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Jogger_Skinny_Brown">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Jogger_Skinny_Green">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Jogger_Skinny_Red">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Journalist_Normal_Blue">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <attachments preset="attachmentsVestPress" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Journalist_Normal_Green">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <attachments preset="attachmentsVestPress" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Journalist_Normal_Red">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <attachments preset="attachmentsVestPress" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Journalist_Normal_White">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <attachments preset="attachmentsVestPress" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Mechanic_Normal_Beige">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Mechanic_Normal_Green">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Mechanic_Normal_Gray">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Mechanic_Normal_Orange">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_MilkMaid_Old_Beige">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_MilkMaid_Old_Black">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Milkmaid_Old_Gray">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_MilkMaid_Old_Green">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Nurse_Fat">
+        <cargo preset="cargoToolMedic" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Paramedic_Normal_Black">
+        <cargo preset="cargoToolMedic" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Patient_Old">
+        <cargo preset="cargoToolMedic" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_PoliceOfficer_Normal">
+        <attachments preset="attachmentsHatPolice" />
+        <cargo preset="cargoAmmoPolice" />
+        <cargo preset="cargoToolPolice" />
+        <cargo chance="0.10">
+            <item name="Mag_SSG82_5rnd" chance="1.0" />
+        </cargo>
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Beige">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Black">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Brown">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Checks">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Gray">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Green">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Red">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Stripes">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_White">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_ShortSkirt_Normal_Yellow">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Skater_Young_Brown">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHelmetSkate" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Skater_Young_Striped">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHelmetSkate" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Skater_Young_Violet">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHelmetSkate" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Survival_Normal_Blue">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Survival_Normal_Orange">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Survival_Normal_Red">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Survival_Normal_White">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_F_Villager_Old_Blue">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Villager_Old_Green">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Villager_Old_Red">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_F_Villager_Old_White">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+<!--
+    ╔══════════════════════════════════════╗
+    ║ CCS - SpawnableTypes - Zombie - Male ║
+    ╚══════════════════════════════════════╝
+-->
+    <type name="CCS_Hashima_Zombie_M_Citizen_Fat_Blue">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Citizen_Fat_Green">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Citizen_Fat_Red">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Citizen_Skinny_Blue">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Citizen_Skinny_Brown">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Citizen_Skinny_Gray">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Citizen_Skinny_Red">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Clerk_Fat_Brown">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Clerk_Fat_Gray">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Clerk_Fat_Khaki">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Clerk_Fat_White">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_CommercialPilot_Old_Blue">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_CommercialPilot_Old_Brown">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_CommercialPilot_Old_Gray">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_CommercialPilot_Old_Olive">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_ConstructionWorker_Normal_Beige">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_ConstructionWorker_Normal_Black">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_ConstructionWorker_Normal_Gray">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_ConstructionWorker_Normal_Green">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Doctor_Fat">
+        <attachments preset="attachmentsHatMedic" />
+        <cargo preset="cargoToolMedic" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Farmer_Fat_Beige">
+        <attachments preset="attachmentsGlassesVillage" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Farmer_Fat_Blue">
+        <attachments preset="attachmentsGlassesVillage" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Farmer_Fat_Brown">
+        <attachments preset="attachmentsGlassesVillage" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Farmer_Fat_Green">
+        <attachments preset="attachmentsGlassesVillage" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Firefighter_Normal">
+        <attachments preset="attachmentsHelmetFirefighter" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Fisherman_Old_Blue">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Fisherman_Old_Gray">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Fisherman_Old_Green">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Fisherman_Old_Red">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Handyman_Normal_Beige">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Handyman_Normal_Blue">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Handyman_Normal_Gray">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Handyman_Normal_Green">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Handyman_Normal_White">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_HeavyIndustryWorker_Normal">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Hermit_Skinny_Beige">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hermit_Skinny_Black">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hermit_Skinny_Green">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hermit_Skinny_Red">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Hiker_Skinny_Blue">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hiker_Skinny_Green">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hiker_Skinny_Yellow">
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHermit" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Hunter_Old_Autumn">
+        <attachments preset="attachmentsBagHunter" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <attachments preset="attachmentsOptic" />
+        <attachments preset="attachmentsVestHunter" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHunter" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hunter_Old_Spring">
+        <attachments preset="attachmentsBagHunter" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <attachments preset="attachmentsOptic" />
+        <attachments preset="attachmentsVestHunter" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHunter" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hunter_Old_Summer">
+        <attachments preset="attachmentsBagHunter" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <attachments preset="attachmentsOptic" />
+        <attachments preset="attachmentsVestHunter" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHunter" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Hunter_Old_Winter">
+        <attachments preset="attachmentsBagHunter" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <attachments preset="attachmentsOptic" />
+        <attachments preset="attachmentsVestHunter" />
+        <cargo preset="cargoFoodHermit" />
+        <cargo preset="cargoToolHunter" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Beige">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Black">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Blue">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_BlueChecks">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Brown">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Gray">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_GreenChecks">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Khaki">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Magenta">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jacket_Normal_Stripes">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Jogger_Skinny_Blue">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jogger_Skinny_Green">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Jogger_Skinny_Red">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatFarm" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Journalist_Skinny">
+        <attachments preset="attachmentsGlassesCity" />
+        <attachments preset="attachmentsHatCity" />
+        <attachments preset="attachmentsVestPress" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Mechanic_Skinny_Blue">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Mechanic_Skinny_Gray">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Mechanic_Skinny_Green">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Mechanic_Skinny_Red">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_MotoBiker_Fat_Beige">
+        <attachments preset="attachmentsHelmetBike" />
+        <cargo preset="cargoAmmoCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_MotoBiker_Fat_Black">
+        <attachments preset="attachmentsHelmetBike" />
+        <cargo preset="cargoAmmoCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_MotoBiker_Fat_Blue">
+        <attachments preset="attachmentsHelmetBike" />
+        <cargo preset="cargoAmmoCity" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_NBC_Black">
+        <cargo preset="cargoContaminatedBlack" />
+        <cargo chance="0.01">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+        <cargo chance="0.10">
+            <item name="CCS_KeyCard_1" chance="0.3" />
+            <item name="CCS_KeyCard_5" chance="0.3" />
+            <item name="CCS_KeyCard_6" chance="0.3" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_NBC_Black_Heavy">
+        <attachments preset="attachmentsVestBlack" />
+        <cargo preset="cargoContaminatedBlack" />
+        <cargo chance="0.01">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+        <cargo chance="0.10">
+            <item name="CCS_KeyCard_1" chance="0.3" />
+            <item name="CCS_KeyCard_5" chance="0.3" />
+            <item name="CCS_KeyCard_6" chance="0.3" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_NBC_Green">
+        <cargo preset="cargoContaminatedGreen" />
+        <cargo chance="0.01">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+        <cargo chance="0.10">
+            <item name="CCS_KeyCard_3" chance="0.3" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_NBC_Green_Heavy">
+        <attachments preset="attachmentsVestGreen" />
+        <cargo preset="cargoContaminatedGreen" />
+        <cargo chance="0.01">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+        <cargo chance="0.10">
+            <item name="CCS_KeyCard_3" chance="0.3" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_NBC_Purple">
+        <cargo preset="cargoContaminatedPurple" />
+        <cargo chance="0.05">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_NBC_Purple_Heavy">
+        <attachments preset="attachmentsVestPurple" />
+        <cargo preset="cargoContaminatedPurple" />
+        <cargo chance="0.05">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_NBC_Red">
+        <cargo preset="cargoContaminatedRed" />
+        <cargo chance="0.01">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+        <cargo chance="0.10">
+            <item name="CCS_KeyCard_2" chance="0.3" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_NBC_Red_Heavy">
+        <attachments preset="attachmentsVestRed" />
+        <cargo preset="cargoContaminatedRed" />
+        <cargo chance="0.01">
+            <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
+        </cargo>
+        <cargo chance="0.10">
+            <item name="CCS_KeyCard_2" chance="0.3" />
+        </cargo>
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_OffshoreWorker_Normal_Green">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_OffshoreWorker_Normal_Orange">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_OffshoreWorker_Normal_Red">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_OffshoreWorker_Normal_Yellow">
+        <attachments preset="attachmentsBagIndustrial" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandIndustrial" />
+        <attachments preset="attachmentsHelmetIndustrial" />
+        <attachments preset="attachmentsVestIndustrial" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Paramedic_Normal_Black">
+        <cargo preset="cargoToolMedic" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Patient_Skinny">
+        <cargo preset="cargoToolMedic" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Patrol_Normal_Autumn">
+        <attachments preset="attachmentsBagArmy" />
+        <attachments preset="attachmentsGlassesArmy" />
+        <attachments preset="attachmentsHelmetArmy" />
+        <attachments preset="attachmentsVestArmy" />
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Patrol_Normal_Flat">
+        <attachments preset="attachmentsBagArmy" />
+        <attachments preset="attachmentsGlassesArmy" />
+        <attachments preset="attachmentsHelmetArmy" />
+        <attachments preset="attachmentsVestArmy" />
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Patrol_Normal_PautRev">
+        <attachments preset="attachmentsBagArmy" />
+        <attachments preset="attachmentsGlassesArmy" />
+        <attachments preset="attachmentsHelmetArmy" />
+        <attachments preset="attachmentsVestArmy" />
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Patrol_Normal_Summer">
+        <attachments preset="attachmentsBagArmy" />
+        <attachments preset="attachmentsGlassesArmy" />
+        <attachments preset="attachmentsHelmetArmy" />
+        <attachments preset="attachmentsVestArmy" />
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_PoliceOfficer_Fat">
+        <attachments preset="attachmentsHatPolice" />
+        <cargo preset="cargoAmmoPolice" />
+        <cargo preset="cargoToolPolice" />
+        <cargo chance="0.10">
+            <item name="Mag_SSG82_5rnd" chance="1.0" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_PoliceOfficer_SpecialForce_Normal">
+        <attachments preset="attachmentsHatPolice" />
+        <cargo preset="cargoAmmoPolice" />
+        <cargo preset="cargoToolPolice" />
+        <cargo chance="0.30">
+            <item name="Mag_SSG82_5rnd" chance="0.50" />
+            <item name="Mag_Scout_5Rnd" chance="0.50" />
+        </cargo>
+    </type>
+    <type name="CCS_Hashima_Zombie_M_PoliceOfficer_SpecialForce_Heavy">
+        <attachments preset="attachmentsHatPolice" />
+        <attachments preset="attachmentsVestPolice" />
+        <cargo preset="cargoAmmoPolice" />
+        <cargo preset="cargoToolPolice" />
+        <cargo chance="0.30">
+            <item name="Mag_SSG82_5rnd" chance="0.50" />
+            <item name="Mag_Scout_5Rnd" chance="0.50" />
+        </cargo>
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Priest_Skinny">
+        <cargo preset="cargoFoodHermit" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Prisoner_Skinny">
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHatPrisoner" />
+        <cargo chance="0.10">
+            <item name="Rope" chance="0.14" />
+        </cargo>
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Skater_Young_Blue">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsHandCity" />
+        <attachments preset="attachmentsHelmetSkate" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Skater_Young_Brown">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsHandCity" />
+        <attachments preset="attachmentsHelmetSkate" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Skater_Young_Gray">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsHandCity" />
+        <attachments preset="attachmentsHelmetSkate" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Skater_Young_Green">
+        <attachments preset="attachmentsBagCity" />
+        <attachments preset="attachmentsHandCity" />
+        <attachments preset="attachmentsHelmetSkate" />
+        <cargo preset="cargoFoodCity" />
+        <cargo preset="cargoToolCity" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Soldier_Fat_Officer">
+        <attachments preset="attachmentsHatOfficer" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Soldier_Normal_Desert">
+        <attachments preset="attachmentsBagArmy" />
+        <attachments preset="attachmentsGlassesArmy" />
+        <attachments preset="attachmentsHelmetArmy" />
+        <attachments preset="attachmentsVestArmy" />
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Soldier_Normal_Desert_Heavy">
+        <attachments preset="attachmentsHelmetArmyHeavy" />
+        <attachments preset="attachmentsVestArmyHeavy" />
+        <cargo preset="cargoFoodArmy" />
+        <cargo preset="cargoGrenade" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Soldier_Normal_Forest">
+        <attachments preset="attachmentsBagArmy" />
+        <attachments preset="attachmentsGlassesArmy" />
+        <attachments preset="attachmentsHelmetArmy" />
+        <attachments preset="attachmentsVestArmy" />
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Soldier_Normal_Forest_Heavy">
+        <attachments preset="attachmentsHelmetArmyHeavy" />
+        <attachments preset="attachmentsVestArmyHeavy" />
+        <cargo preset="cargoFoodArmy" />
+        <cargo preset="cargoGrenade" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Soldier_Normal_Woodland">
+        <attachments preset="attachmentsBagArmy" />
+        <attachments preset="attachmentsGlassesArmy" />
+        <attachments preset="attachmentsHelmetArmy" />
+        <attachments preset="attachmentsVestArmy" />
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Soldier_Normal_Woodland_Heavy">
+        <attachments preset="attachmentsHelmetArmyHeavy" />
+        <attachments preset="attachmentsVestArmyHeavy" />
+        <cargo preset="cargoFoodArmy" />
+        <cargo preset="cargoGrenade" />
+    </type>
+
+    <type name="CCS_Hashima_Zombie_M_Villager_Old_Blue">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandVillage" />
+        <attachments preset="attachmentsHatVillage" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Villager_Old_Green">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandVillage" />
+        <attachments preset="attachmentsHatVillage" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+    <type name="CCS_Hashima_Zombie_M_Villager_Old_White">
+        <attachments preset="attachmentsBagVillage" />
+        <attachments preset="attachmentsGlassesVillage" />
+        <attachments preset="attachmentsHandVillage" />
+        <attachments preset="attachmentsHatVillage" />
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolVillage" />
+    </type>
+</spawnabletypes>

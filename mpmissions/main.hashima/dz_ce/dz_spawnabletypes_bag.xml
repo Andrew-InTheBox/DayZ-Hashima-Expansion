@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<spawnabletypes>
+<!--
+    ╔═══════════════════════════╗
+    ║ DZ - SpawnableTypes - Bag ║
+    ╚═══════════════════════════╝
+-->
+    <type name="AssaultBag_Black">
+        <cargo preset="cargoMixArmy" />
+        <cargo preset="cargoMixArmy" />
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="AssaultBag_Green">
+        <cargo preset="cargoMixArmy" />
+        <cargo preset="cargoMixArmy" />
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="AssaultBag_Ttsko">
+        <cargo preset="cargoMixArmy" />
+        <cargo preset="cargoMixArmy" />
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="HuntingBag">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoMixHunter" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="Slingbag_Black">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlingBag_Brown">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlingBag_Gray">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SmershBag">
+        <cargo preset="cargoFoodArmy" />
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="TortillaBag">
+        <cargo preset="cargoFoodArmy" />
+        <cargo preset="cargoMixArmy" />
+    </type>
+</spawnabletypes>

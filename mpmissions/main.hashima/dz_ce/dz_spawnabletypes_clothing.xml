@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<spawnabletypes>
+<!--
+    ╔═════════════════════════════════════════╗
+    ║ DZ - SpawnableTypes - Clothing - Bottom ║
+    ╚═════════════════════════════════════════╝
+-->
+    <type name="BDUPants">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="Breeches_Beetcheck">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Beige">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Blackcheck">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Browncheck">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Green">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Pink">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Breeches_White">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="CargoPants_Beige">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CargoPants_Black">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CargoPants_Blue">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CargoPants_Green">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="CargoPants_Grey">
+        <cargo preset="cargoFoodVillage" />
+        <cargo preset="cargoToolIndustrial" />
+    </type>
+    <type name="GorkaPants_Autumn">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="GorkaPants_Flat">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="GorkaPants_PautRev">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="GorkaPants_Summer">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="HunterPants_Autumn">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="HunterPants_Brown">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="HunterPants_Spring">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="HunterPants_Summer">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="ShortJeans_Black">
+        <cargo preset="cargoFoodVillage" />
+    </type>
+    <type name="ShortJeans_Blue">
+        <cargo preset="cargoFoodVillage" />
+    </type>
+    <type name="ShortJeans_Brown">
+        <cargo preset="cargoFoodVillage" />
+    </type>
+    <type name="ShortJeans_Darkblue">
+        <cargo preset="cargoFoodVillage" />
+    </type>
+    <type name="ShortJeans_Green">
+        <cargo preset="cargoFoodVillage" />
+    </type>
+    <type name="ShortJeans_Red">
+        <cargo preset="cargoFoodVillage" />
+    </type>
+    <type name="SlacksPants_Beige">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlacksPants_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlacksPants_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlacksPants_Brown">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlacksPants_DarkGrey">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlacksPants_Khaki">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlacksPants_LightGrey">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="SlacksPants_White">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitPants_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitPants_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitPants_Green">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitPants_LightBlue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitPants_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TTSKOPants">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="USMCPants_Desert">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="USMCPants_Woodland">
+        <cargo preset="cargoMixArmy" />
+    </type>
+<!--
+    ╔══════════════════════════════════════════════════╗
+    ║ DZ - SpawnableTypes - Clothing - Masks & Glasses ║
+    ╚══════════════════════════════════════════════════╝
+-->
+    <type name="AirborneMask">
+        <damage min="0.00" max="0.35" />
+        <cargo chance="0.20">
+            <item name="CCS_Hashima_Tool_Gas_Mask_Filter_Black" />
+        </cargo>
+    </type>
+    <type name="GP5GasMask">
+        <damage min="0.00" max="0.35" />
+        <cargo chance="0.20">
+            <item name="CCS_Hashima_Tool_Gas_Mask_Filter_Black" />
+        </cargo>
+    </type>
+    <type name="GasMask">
+        <damage min="0.00" max="0.35" />
+    </type>
+<!--
+    ╔══════════════════════════════════════╗
+    ║ DZ - SpawnableTypes - Clothing - Top ║
+    ╚══════════════════════════════════════╝
+-->
+    <type name="BomberJacket_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="BomberJacket_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="BomberJacket_Brown">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="BomberJacket_Grey">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="BomberJacket_Maroon">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="BomberJacket_Olive">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="BomberJacket_SkyBlue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="GorkaEJacket_Autumn">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="GorkaEJacket_Flat">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="GorkaEJacket_PautRev">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="GorkaEJacket_Summer">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="HikingJacket_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="HikingJacket_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="HikingJacket_Green">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="HikingJacket_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Hoodie_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Hoodie_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Hoodie_Brown">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Hoodie_Green">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Hoodie_Grey">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Hoodie_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="HuntingJacket_Autumn">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="HuntingJacket_Brown">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="HuntingJacket_Spring">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="HuntingJacket_Summer">
+        <cargo preset="cargoMixHunter" />
+    </type>
+    <type name="M65Jacket_Black">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="M65Jacket_Khaki">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="M65Jacket_Olive">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="M65Jacket_Tan">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="ManSuit_Beige">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="ManSuit_Black">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="ManSuit_Blue">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="ManSuit_Brown">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="ManSuit_DarkGrey">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="ManSuit_Khaki">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="ManSuit_LightGrey">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="ManSuit_White">
+        <cargo chance="0.02">
+            <item name="Derringer_Black" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="Raincoat_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Raincoat_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Raincoat_Green">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Raincoat_Orange">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Raincoat_Pink">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Raincoat_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Raincoat_Yellow">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="RidersJacket_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Green">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Grey">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Orange">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Violet">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="QuiltedJacket_Yellow">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Shirt_BlueCheck">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Shirt_BlueCheckBright">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Shirt_GreenCheck">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Shirt_PlaneBlack">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Shirt_RedCheck">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Shirt_WhiteCheck">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Sweater_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Sweater_Gray">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="Sweater_Green">
+        <cargo preset="cargoMixArmy" />
+    </type>
+    <type name="Sweater_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TacticalShirt_Black">
+        <cargo preset="cargoAmmoArmy" />
+    </type>
+    <type name="TacticalShirt_Grey">
+        <cargo preset="cargoAmmoArmy" />
+    </type>
+    <type name="TacticalShirt_Olive">
+        <cargo preset="cargoAmmoArmy" />
+    </type>
+    <type name="TacticalShirt_Tan">
+        <cargo preset="cargoAmmoArmy" />
+    </type>
+    <type name="TrackSuitJacket_Black">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitJacket_Blue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitJacket_Green">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitJacket_LightBlue">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TrackSuitJacket_Red">
+        <cargo preset="cargoMixVillage" />
+    </type>
+    <type name="TTsKOJacket_Camo">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="USMCJacket_Desert">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="USMCJacket_Woodland">
+        <cargo preset="cargoAmmoArmy" />
+        <cargo preset="cargoFoodArmy" />
+    </type>
+    <type name="WomanSuit_Beige">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="WomanSuit_Black">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="WomanSuit_Blue">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="WomanSuit_Brown">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="WomanSuit_DarkGrey">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="WomanSuit_Khaki">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="WomanSuit_LightGrey">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+    <type name="WomanSuit_White">
+        <cargo chance="0.01">
+            <item name="Derringer_Pink" chance="1.00" />
+        </cargo>
+    </type>
+</spawnabletypes>
