@@ -1,0 +1,35 @@
+Entries below are per vehicle type, and are 1 row with x,z,y coords, and another row where we have orientation.
+The first of the 3 values in orientation triplet is the one that's needed in cfgeventspawns as the "a" value.  The next two values are always 0 because those axis are not used.
+
+VehicleMH6Helicopter:
+
+<3363.39, 9.02496, 4101.18>
+<162.186, 0, -0>
+
+<3554.22, 9.02491, 3223.28>
+<-15.4968, -0, 0>
+
+<1509.97, 4.4179, 2782.86>
+<96.377, 0, -0>
+
+VehicleHatchback02:
+
+<1355.45, 4.46121, 2638.01>
+<-134.571, 0, -0>
+
+<1704.01, 4.46009, 2155.56>
+<70.4897, 0, -0>
+
+<1719.01, 4.63275, 2516.39>
+<-91.7523, 0, -0>
+
+VehicleLandRover:
+
+<4533.04, 2.30497, 2930.66>
+<-61.503, -0, 0>
+
+<2542.08, 8.02493, 2379.74>
+<27.8804, 0, -0>
+
+<3475.18, 2.11997, 2921.41>
+<74.9444, 0, -0>

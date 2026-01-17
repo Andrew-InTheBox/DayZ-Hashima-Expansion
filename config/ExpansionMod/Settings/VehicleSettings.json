@@ -1,8 +1,8 @@
 {
     "m_Version": 21,
     "VehicleSync": 0,
-    "VehicleRequireKeyToStart": 1,
-    "VehicleRequireAllDoors": 1,
+    "VehicleRequireKeyToStart": 0,
+    "VehicleRequireAllDoors": 0,
     "VehicleLockedAllowInventoryAccess": 0,
     "VehicleLockedAllowInventoryAccessWithoutDoors": 1,
     "MasterKeyPairingMode": 2,
