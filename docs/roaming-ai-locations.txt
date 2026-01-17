@@ -1,0 +1,55 @@
+Roamer Spawn Coords
+
+hunting-cabins-sw-island
+<711.764, 9.82497, 1061.67>
+
+behind-stadium
+<762.046, 51.3201, 2076.32>
+
+west-bay-sw-island
+<1370.86, 4.42498, 2541.8>
+
+east-bay-sw-island
+<1809.35, 15.2968, 2529.93>
+
+power-plant-sw-island
+<1535.87, 4.4149, 2865.54>
+
+sw-center-island
+<2449.73, 8.02499, 2427.89>
+
+police-center-island
+<2652.56, 8.02489, 2536.74>
+
+hospital-center-island
+<2642.21, 8.02488, 2757.92>
+
+industrial-se-island
+<3982.62, 27.4066, 770.029>
+
+harbor-se-island
+<4240.09, 1.75, 1076.48>
+
+bridge-nw-island
+<1058.49, 8.0384, 4060.06>
+
+apts-nw-island
+<866.729, 9.406, 4325.66>
+
+apts-ne-island
+<3277.5, 2.00247, 2719.41>
+
+town-ne-island
+<3568.83, 1.99, 2792.96>
+
+hanger-ne-island
+<3461.78, 9.02496, 3422.14>
+
+far-airstrip-ne-island
+<3341.31, 9, 4154.82>
+
+harbor-ne-island
+<3740.56, 2.01499, 2711.57>
+
+hunting-cabins-ne-island
+<4541.42, 2.30494, 2924.31>

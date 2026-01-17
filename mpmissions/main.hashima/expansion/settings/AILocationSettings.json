@@ -2,121 +2,198 @@
     "m_Version": 4,
     "RoamingLocations": [
         {
-            "Name": "Local_Random_1",
+            "Name": "hunting-cabins-sw-island",
             "Position": [
-                973.4071655273438,
-                57.58000183105469,
-                1743.6849365234376
+                711.764,
+                9.82497,
+                1061.67
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_2",
+            "Name": "behind-stadium",
             "Position": [
-                4202.81103515625,
+                762.046,
+                51.3201,
+                2076.32
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "west-bay-sw-island",
+            "Position": [
+                1370.86,
+                4.42498,
+                2541.8
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "east-bay-sw-island",
+            "Position": [
+                1809.35,
+                15.2968,
+                2529.93
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "power-plant-sw-island",
+            "Position": [
+                1535.87,
+                4.4149,
+                2865.54
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "sw-center-island",
+            "Position": [
+                2449.73,
+                8.02499,
+                2427.89
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "police-center-island",
+            "Position": [
+                2652.56,
+                8.02489,
+                2536.74
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "hospital-center-island",
+            "Position": [
+                2642.21,
+                8.02488,
+                2757.92
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "industrial-se-island",
+            "Position": [
+                3982.62,
+                27.4066,
+                770.029
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "harbor-se-island",
+            "Position": [
+                4240.09,
                 1.75,
-                945.3526000976563
+                1076.48
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_3",
+            "Name": "bridge-nw-island",
             "Position": [
-                950.2609252929688,
-                67.96420288085938,
-                1918.77685546875
+                1058.49,
+                8.0384,
+                4060.06
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_4",
+            "Name": "apts-nw-island",
             "Position": [
-                1578.4022216796876,
-                4.559999942779541,
-                2274.481201171875
+                866.729,
+                9.406,
+                4325.66
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_5",
+            "Name": "apts-ne-island",
             "Position": [
-                2594.476806640625,
-                26.631999969482423,
-                2585.6748046875
+                3277.5,
+                2.00247,
+                2719.41
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_6",
+            "Name": "town-ne-island",
             "Position": [
-                2168.515380859375,
-                13.948185920715332,
-                2945.436279296875
+                3568.83,
+                1.99,
+                2792.96
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_7",
+            "Name": "hanger-ne-island",
             "Position": [
-                4184.40673828125,
-                37.49317932128906,
-                834.6041259765625
+                3461.78,
+                9.02496,
+                3422.14
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_8",
+            "Name": "far-airstrip-ne-island",
             "Position": [
-                3550.460693359375,
-                5.636646270751953,
-                2888.5693359375
+                3341.31,
+                9.0,
+                4154.82
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_9",
+            "Name": "harbor-ne-island",
             "Position": [
-                3706.521240234375,
-                34.5474853515625,
-                3457.518310546875
+                3740.56,
+                2.01499,
+                2711.57
             ],
             "Radius": 100.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "Local_Random_10",
+            "Name": "hunting-cabins-ne-island",
             "Position": [
-                3689.150146484375,
-                6.235154151916504,
-                2785.076171875
-            ],
-            "Radius": 100.0,
-            "Type": "Local",
-            "Enabled": 1
-        },
-        {
-            "Name": "Local_Random_11",
-            "Position": [
-                4099.8056640625,
-                -8.820306777954102,
-                1038.8289794921876
+                4541.42,
+                2.30494,
+                2924.31
             ],
             "Radius": 100.0,
             "Type": "Local",
@@ -138,5 +215,16 @@
         "land_ship_medium2",
         "land_train_wagon_box"
     ],
-    "NoGoAreas": []
+    "NoGoAreas": [
+        {
+            "Name": "NW-Exclusion-Zone",
+            "Position": [
+                556.1945,
+                8.0,
+                4563.63
+            ],
+            "Radius": 185.4923,
+            "Height": 150.0
+        }
+    ]
 }
