@@ -365,7 +365,7 @@
             ],
             "spawnradius": -1.0,
             "bubakProps": {
-                "bubaknum": 30,
+                "bubaknum": 20,
                 "onlyfilluptobubaknum": 0,
                 "itemrandomdmg": 0,
                 "bubaci": [
@@ -610,7 +610,7 @@
             ],
             "spawnradius": -1.0,
             "bubakProps": {
-                "bubaknum": 30,
+                "bubaknum": 20,
                 "onlyfilluptobubaknum": 0,
                 "itemrandomdmg": 0,
                 "bubaci": [
@@ -706,7 +706,7 @@
             ],
             "spawnradius": -1.0,
             "bubakProps": {
-                "bubaknum": 25,
+                "bubaknum": 20,
                 "onlyfilluptobubaknum": 0,
                 "itemrandomdmg": 0,
                 "bubaci": [
@@ -807,7 +807,7 @@
             ],
             "spawnradius": -1.0,
             "bubakProps": {
-                "bubaknum": 30,
+                "bubaknum": 20,
                 "onlyfilluptobubaknum": 0,
                 "itemrandomdmg": 0,
                 "bubaci": [
@@ -903,7 +903,7 @@
             ],
             "spawnradius": -1.0,
             "bubakProps": {
-                "bubaknum": 45,
+                "bubaknum": 20,
                 "onlyfilluptobubaknum": 0,
                 "itemrandomdmg": 0,
                 "bubaci": [
@@ -989,7 +989,7 @@
             ],
             "spawnradius": -1.0,
             "bubakProps": {
-                "bubaknum": 30,
+                "bubaknum": 20,
                 "onlyfilluptobubaknum": 0,
                 "itemrandomdmg": 0,
                 "bubaci": [
