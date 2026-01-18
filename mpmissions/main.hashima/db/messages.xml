@@ -8,7 +8,7 @@
   </message>
 
   <message>
-    <deadline>10</deadline>
+    <deadline>600</deadline>
     <shutdown>1</shutdown>
     <text>Server restart in #tmin minutes.</text>
   </message>
