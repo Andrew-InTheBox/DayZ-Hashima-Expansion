@@ -152,9 +152,9 @@
     </event>
 	<!-- HELICOPTERS -->
 	<event name="VehicleMH6Helicopter">
-        <nominal>3</nominal>
-        <min>2</min>
-        <max>4</max>
+        <nominal>5</nominal>
+        <min>4</min>
+        <max>6</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>

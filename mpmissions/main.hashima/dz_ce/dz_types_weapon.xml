@@ -69,10 +69,10 @@
         <usage name="Village" />
     </type>
     <type name="Ammo_308Win">
-        <nominal>15</nominal>
+        <nominal>25</nominal>
         <lifetime>5400</lifetime>
         <restock>300</restock>
-        <min>7</min>
+        <min>20</min>
         <quantmin>25</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -101,10 +101,10 @@
         <value name="Tier4" />
     </type>
     <type name="Ammo_357">
-        <nominal>20</nominal>
+        <nominal>30</nominal>
         <lifetime>5400</lifetime>
         <restock>300</restock>
-        <min>15</min>
+        <min>23</min>
         <quantmin>10</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -115,10 +115,10 @@
         <usage name="Village" />
     </type>
     <type name="Ammo_380">
-        <nominal>20</nominal>
+        <nominal>30</nominal>
         <lifetime>5400</lifetime>
         <restock>300</restock>
-        <min>15</min>
+        <min>25</min>
         <quantmin>10</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -204,10 +204,10 @@
         <usage name="Military" />
     </type>
     <type name="Ammo_45ACP">
-        <nominal>20</nominal>
+        <nominal>30</nominal>
         <lifetime>5400</lifetime>
         <restock>300</restock>
-        <min>15</min>
+        <min>23</min>
         <quantmin>10</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -217,10 +217,10 @@
         <usage name="Military" />
     </type>
     <type name="Ammo_545x39">
-        <nominal>15</nominal>
+        <nominal>25</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>10</min>
+        <min>20</min>
         <quantmin>25</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -243,10 +243,10 @@
         <usage name="Military" />
     </type>
     <type name="Ammo_556x45">
-        <nominal>25</nominal>
+        <nominal>30</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>17</min>
+        <min>22</min>
         <quantmin>10</quantmin>
         <quantmax>60</quantmax>
         <cost>100</cost>
@@ -275,10 +275,10 @@
         <value name="Tier4" />
     </type>
     <type name="Ammo_762x39">
-        <nominal>25</nominal>
+        <nominal>32</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>17</min>
+        <min>28</min>
         <quantmin>10</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -310,10 +310,10 @@
         <value name="Tier4" />
     </type>
     <type name="Ammo_762x54">
-        <nominal>25</nominal>
+        <nominal>30</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>15</min>
+        <min>25</min>
         <quantmin>10</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -345,10 +345,10 @@
         <value name="Tier4" />
     </type>
     <type name="Ammo_9x19">
-        <nominal>30</nominal>
+        <nominal>35</nominal>
         <lifetime>5400</lifetime>
         <restock>300</restock>
-        <min>20</min>
+        <min>30</min>
         <quantmin>10</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -360,10 +360,10 @@
         <usage name="Police" />
     </type>
     <type name="Ammo_9x39">
-        <nominal>20</nominal>
+        <nominal>25</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>12</min>
+        <min>18</min>
         <quantmin>10</quantmin>
         <quantmax>60</quantmax>
         <cost>100</cost>
@@ -448,10 +448,10 @@
         <usage name="Coast" />
     </type>
     <type name="Ammo_HuntingBolt">
-        <nominal>15</nominal>
+        <nominal>20</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>9</min>
+        <min>12</min>
         <quantmin>40</quantmin>
         <quantmax>100</quantmax>
         <cost>100</cost>
@@ -1862,10 +1862,10 @@
         <value name="Tier4" />
     </type>
     <type name="Mag_CMAG_10Rnd">
-        <nominal>7</nominal>
+        <nominal>12</nominal>
         <lifetime>5400</lifetime>
         <restock>300</restock>
-        <min>5</min>
+        <min>8</min>
         <quantmin>10</quantmin>
         <quantmax>100</quantmax>
         <cost>100</cost>
@@ -1877,10 +1877,10 @@
         <value name="Tier3" />
     </type>
     <type name="Mag_CMAG_20Rnd">
-        <nominal>5</nominal>
+        <nominal>7</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>3</min>
+        <min>5</min>
         <quantmin>5</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>

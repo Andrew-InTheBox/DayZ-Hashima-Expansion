@@ -43,10 +43,10 @@
         <usage name="Village"/>
     </type>
     <type name="Ammo_Expansion_338">
-        <nominal>60</nominal>
+        <nominal>30</nominal>
         <lifetime>10800</lifetime>
         <restock>0</restock>
-        <min>50</min>
+        <min>20</min>
         <quantmin>40</quantmin>
         <quantmax>60</quantmax>
         <cost>100</cost>
@@ -81,8 +81,8 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="1"/>
         <category name="weapons"/>
         <usage name="Military"/>
-        <value name="Tier2"/>
         <value name="Tier3"/>
+        <value name="Tier4"/>
     </type>
     <!-- ADDITONAL VANILLA CAR VARIANTS -->
     <!-- OFFROAD HATCHBACK -->
@@ -2241,10 +2241,10 @@
         <usage name="Farm"/>
     </type>
 	<type name="ExpansionVodnikWheel">
-        <nominal>25</nominal>
+        <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
-        <min>10</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -2253,10 +2253,10 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionVodnikDoorDriver">
-        <nominal>15</nominal>
+        <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
-        <min>5</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -2265,10 +2265,10 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionVodnikDoorCoDriver">
-        <nominal>15</nominal>
+        <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
-        <min>5</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -2289,10 +2289,10 @@
         <usage name="Industrial" />
     </type>
 	<type name="ExpansionUAZDoorDriver">
-        <nominal>15</nominal>
+        <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
-        <min>5</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -2301,10 +2301,10 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUAZDoorCoDriver">
-        <nominal>15</nominal>
+        <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
-        <min>5</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -2313,10 +2313,10 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUAZDoorCargo1">
-        <nominal>15</nominal>
+        <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
-        <min>5</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -2325,10 +2325,10 @@
         <usage name="Industrial"/>
     </type>
 	<type name="ExpansionUAZDoorCargo2">
-        <nominal>15</nominal>
+        <nominal>1</nominal>
         <lifetime>2700</lifetime>
         <restock>0</restock>
-        <min>5</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
