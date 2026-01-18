@@ -1,41 +1,46 @@
 @echo off
-:start
+setlocal
+
 ::Name for the CMD window
-set serverName=KRONJON-Hashima-PvE
+set "serverName=KRONJON-Hashima-PvE"
 ::Server Port
-set serverPort=2302
+set "serverPort=2302"
 ::Server config
-set serverConfig=serverDZ.cfg
+set "serverConfig=serverDZ.cfg"
 ::Server profile folder
-set serverProfile=config
+set "serverProfile=config"
 ::Logical CPU cores to use (Equal or less than available)
-set serverCPU=4
-::Sets title for terminal (DONT edit)
+set "serverCPU=4"
+
 title %serverName% batch
 
-::Create mods variable by concatenating directory names starting with "@" in the current directory
+::Build mods list from folders starting with "@"
 setlocal enabledelayedexpansion
 set "mods="
 for /d %%D in (@*) do (
-    if not defined mods ( 
+    if not defined mods (
         set "mods=%%~D"
     ) else (
         set "mods=!mods!;%%~D"
     )
 )
-
-:: Export mods to global scope
 endlocal & set "mods=%mods%"
 
 echo Server mod list: %mods%
-echo (%time%) %serverName% started.
 
-::Launch parameters (edit end: -config=|-port=|-profiles=|-doLogs|-adminLog|-netLog|-freezeCheck|-filePatching|-BEpath=|-cpuCount=)
-start "DayZ Server" /min DayZServer_x64.exe -config=%serverConfig% -mod=%mods% "-serverMod=_@Heatmap;_@SpawnerBubaku" -port=%serverPort% -profiles=%serverProfile% -cpuCount=%serverCPU% -adminlog -netlog -freezecheck 
-::Time in seconds before kill server process (14400 = 4 hours)
-timeout 28000
-taskkill /im DayZServer_x64.exe /F
-::Time in seconds to wait before..
-timeout 10
-::Go back to the top and repeat the whole cycle again
-goto start
+:loop
+echo (%time%) Starting %serverName%...
+
+:: /wait = batch pauses until DayZServer_x64.exe exits (graceful shutdown)
+start "DayZ Server" /min /wait DayZServer_x64.exe ^
+  -config=%serverConfig% ^
+  "-mod=%mods%" ^
+  "-serverMod=_@Heatmap;_@SpawnerBubaku" ^
+  -port=%serverPort% ^
+  -profiles=%serverProfile% ^
+  -cpuCount=%serverCPU% ^
+  -adminlog -netlog -freezecheck
+
+echo (%time%) Server process exited. Restarting in 3 seconds...
+timeout /t 3 /nobreak >nul
+goto loop
