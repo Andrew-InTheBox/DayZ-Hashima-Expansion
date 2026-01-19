@@ -16,7 +16,7 @@
     "aircraftEngineNoiseSFX": 1,
     "aircraftLoiterOnPlayer": 0,
     "aircraftLoiterTime": 0.0,
-    "aircraftShootAtPlayer": 1,
+    "aircraftShootAtPlayer": 0,
     "aircraftAccuracy": 35.0,
     "aircraftCrew": "--> The settings below are for AI spawned at crash sites <--",
     "aircraftMinCrew": 3,

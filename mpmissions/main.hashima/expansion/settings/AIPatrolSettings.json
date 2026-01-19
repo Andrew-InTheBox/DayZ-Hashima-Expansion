@@ -867,7 +867,7 @@
             ]
         },
         {
-            "Name": "roaming-bridge-nw-island",
+            "Name": "roaming-mid-brdg-nw-island",
             "Persist": 1,
             "Faction": "West",
             "Formation": "",
@@ -912,14 +912,14 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1058.49,
-                    8.0384,
-                    4060.06
+                    2192.73,
+                    8.05,
+                    2926.19
                 ]
             ]
         },
         {
-            "Name": "roaming-apts-nw-island",
+            "Name": "roaming-far-brdg-nw-island",
             "Persist": 1,
             "Faction": "West",
             "Formation": "",
@@ -964,9 +964,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    866.729,
-                    9.406,
-                    4325.66
+                    996.08,
+                    8.05,
+                    4118.75
                 ]
             ]
         },

@@ -112,24 +112,24 @@
             "Enabled": 1
         },
         {
-            "Name": "bridge-nw-island",
+            "Name": "mid-bridge-nw-island",
             "Position": [
-                1058.49,
-                8.0384,
-                4060.06
+                2192.73,
+                8.05,
+                2926.19
             ],
-            "Radius": 100.0,
+            "Radius": 70.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "apts-nw-island",
+            "Name": "far-bridge-nw-island",
             "Position": [
-                866.729,
-                9.406,
-                4325.66
+                996.08,
+                8.05,
+                4118.75
             ],
-            "Radius": 100.0,
+            "Radius": 70.0,
             "Type": "Local",
             "Enabled": 1
         },
