@@ -1,6 +1,6 @@
 {
     "readMe": "--> Be sure to check the config explanation on the workshop for option descriptions <--",
-    "Enabled": 1,
+    "Enabled": 0,
     "minPlayersToSpawnAircraft": 1,
     "maxActiveAircraft": 1,
     "startDelayTime": 11000.0,
