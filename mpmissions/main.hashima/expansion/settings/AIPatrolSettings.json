@@ -19,18 +19,8 @@
         "Global": [
             {
                 "MinPlayers": 0,
-                "MaxPlayers": 10,
+                "MaxPlayers": 12,
                 "MaxPatrols": 35
-            },
-            {
-                "MinPlayers": 11,
-                "MaxPlayers": 20,
-                "MaxPatrols": 20
-            },
-            {
-                "MinPlayers": 21,
-                "MaxPlayers": 30,
-                "MaxPatrols": 15
             }
         ],
         "Quest": [
