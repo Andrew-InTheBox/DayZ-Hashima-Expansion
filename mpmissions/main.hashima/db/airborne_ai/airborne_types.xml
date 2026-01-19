@@ -3,10 +3,10 @@
 
     <!-- Anti-Air Quad Missile Launcher -->
     <type name="AYSA_antiAirQuadLauncher">
-        <nominal>2</nominal>
+        <nominal>0</nominal>
         <lifetime>10800</lifetime>
         <restock>3600</restock>
-        <min>1</min>
+        <min>0</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -19,10 +19,10 @@
 
     <!-- Missile Launcher Magazine -->
     <type name="AYSA_missileMag">
-        <nominal>5</nominal>
+        <nominal>0</nominal>
         <lifetime>10800</lifetime>
         <restock>3600</restock>
-        <min>2</min>
+        <min>0</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -33,10 +33,10 @@
 
     <!-- Anti-Air Missile Ammo -->
     <type name="AYSA_antiAirMissile">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>10800</lifetime>
         <restock>10800</restock>
-        <min>12</min>
+        <min>0</min>
         <quantmin>100</quantmin>
         <quantmax>100</quantmax>
         <cost>100</cost>
@@ -47,10 +47,10 @@
 
     <!-- Red Flare Ammo -->
     <type name="AYSA_redFlareAmmo">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>10</min>
+        <min>0</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -65,10 +65,10 @@
 
     <!-- Blue Flare Ammo -->
     <type name="AYSA_blueFlareAmmo">
-        <nominal>15</nominal>
+        <nominal>0</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>10</min>
+        <min>0</min>
         <quantmin>20</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
