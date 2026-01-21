@@ -147,6 +147,8 @@ echo (%time%) Skipping %~1 (in SKIP_MODS)
 goto :eof
 
 :update_one
+call :is_skipped "%~1"
+if "%SKIP%"=="1" goto :skip_mod_update
 setlocal EnableDelayedExpansion
 set "MOD_DIR=%~1"
 if not exist "!MOD_DIR!\meta.cpp" goto :skip_nometa
