@@ -31,5 +31,7 @@ cache.ch
 mpmissions/main.hashima/areaflags.map
 
 # Ignore heatmap session files except the example
+config/Heatmap/*.json
 config/Heatmap/session_*.json
 !config/Heatmap/example_Heatmap.json
+.env
