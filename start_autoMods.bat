@@ -90,11 +90,18 @@ if /i not "%STEAM_LOGIN%"=="anonymous" (
   )
 )
 
-set "STEAMCMD_WORKSHOP_ARGS="
+set "STEAMCMD_SCRIPT=%STEAMCMD_DIR%steamcmd_workshop.txt"
+set "QUEUED=0"
+> "%STEAMCMD_SCRIPT%" echo %LOGIN_ARGS:+=%
 for /d %%D in (@* _@*) do call :maybe_queue_update "%%D"
-if not defined STEAMCMD_WORKSHOP_ARGS goto :eof
+if "%QUEUED%"=="0" (
+  del "%STEAMCMD_SCRIPT%" >nul 2>&1
+  goto :eof
+)
+>> "%STEAMCMD_SCRIPT%" echo quit
 echo (%time%) Updating mods in one SteamCMD session...
-"%STEAMCMD%" %LOGIN_ARGS% %STEAMCMD_WORKSHOP_ARGS% +quit
+"%STEAMCMD%" +runscript "%STEAMCMD_SCRIPT%"
+del "%STEAMCMD_SCRIPT%" >nul 2>&1
 call :check_sentry
 for /d %%D in (@* _@*) do call :maybe_copy_from_workshop "%%D"
 goto :eof
@@ -114,7 +121,8 @@ for /f "tokens=2 delims==;" %%I in ('findstr /i "publishedid" "!MOD_DIR!\meta.cp
 set "MOD_ID=!MOD_ID: =!"
 if "!MOD_ID!"=="" goto :skip_noid
 echo (%time%) Queued !MOD_DIR! (workshop !MOD_ID!)
-endlocal & set "STEAMCMD_WORKSHOP_ARGS=%STEAMCMD_WORKSHOP_ARGS% +workshop_download_item %WORKSHOP_APPID% %MOD_ID% validate"
+>> "%STEAMCMD_SCRIPT%" echo workshop_download_item %WORKSHOP_APPID% !MOD_ID! validate
+endlocal & set "QUEUED=1"
 goto :eof
 
 :update_from_workshop
@@ -235,14 +243,14 @@ setlocal
 set "SENTRY_FOUND=0"
 for %%F in ("%STEAMCMD_DIR%ssfn*") do set "SENTRY_FOUND=1"
 if "%SENTRY_FOUND%"=="0" (
-  echo (%time%) WARNING: Steam Guard sentry file not found in "%STEAMCMD_DIR%". You may be prompted again.
+  echo ^(%time%^) WARNING: Steam Guard sentry file not found in "%STEAMCMD_DIR%". You may be prompted again.
 ) else (
-  echo (%time%) Steam Guard sentry file detected.
+  echo ^(%time%^) Steam Guard sentry file detected.
 )
 if exist "%STEAMCMD_DIR%config\config.vdf" (
-  echo (%time%) SteamCMD config token found: "%STEAMCMD_DIR%config\config.vdf"
+  echo ^(%time%^) SteamCMD config token found: "%STEAMCMD_DIR%config\config.vdf"
 ) else (
-  echo (%time%) WARNING: SteamCMD config token missing: "%STEAMCMD_DIR%config\config.vdf"
+  echo ^(%time%^) WARNING: SteamCMD config token missing: "%STEAMCMD_DIR%config\config.vdf"
 )
 endlocal & goto :eof
 
