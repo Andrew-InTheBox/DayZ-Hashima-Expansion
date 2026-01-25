@@ -8,6 +8,12 @@ if exist "%SCRIPT_DIR%.env" (
   )
 )
 
+:: ============================================
+:: WORKSHOP UPDATES TOGGLE
+:: Set to 0 to completely disable all mod/workshop updates
+:: ============================================
+set "ENABLE_WORKSHOP_UPDATES=1"
+
 ::Name for the CMD window
 set "serverName=KRONJON-Hashima-PvE"
 ::Server Port
@@ -25,7 +31,7 @@ set "STEAM_LOGIN=anonymous"
 set "STEAM_PASS="
 set "STEAM_GUARD="
 set "WORKSHOP_APPID=221100"
-set "UPDATE_ON_RESTART=1"
+set "UPDATE_ON_RESTART=0"
 set "USE_STEAMCMD=1"
 set "WORKSHOP_PATH=E:\SteamLibrary\steamapps\workshop\content\221100"
 set "SKIP_MODS=_@Heatmap"
@@ -52,7 +58,7 @@ echo Server mod list: %mods%
 :loop
 echo (%time%) Starting %serverName%...
 
-if "%UPDATE_ON_RESTART%"=="1" call :update_mods
+if "%ENABLE_WORKSHOP_UPDATES%"=="1" if "%UPDATE_ON_RESTART%"=="1" call :update_mods
 
 :: /wait = batch pauses until DayZServer_x64.exe exits (graceful shutdown)
 start "DayZ Server" /min /wait DayZServer_x64.exe ^

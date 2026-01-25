@@ -434,9 +434,61 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    762.046,
-                    40.3201,
-                    2076.32
+                    823.132,
+                    67.3049,
+                    2068.62
+                ]
+            ]
+        },
+        {
+            "Name": "roaming-starting-island-east",
+            "Persist": 1,
+            "Faction": "West",
+            "Formation": "",
+            "FormationScale": 0.0,
+            "FormationLooseness": 0.0,
+            "Loadout": "PlayerSurvivorLoadout",
+            "Units": [],
+            "NumberOfAI": 1,
+            "NumberOfAIMax": 0,
+            "Behaviour": "ROAMING",
+            "LootingBehaviour": "ALL",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "DefaultStance": "STANDING",
+            "DefaultLookAngle": 0.0,
+            "CanBeLooted": 1,
+            "LootDropOnDeath": "",
+            "UnlimitedReload": 4,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "NoiseInvestigationDistanceLimit": -1.0,
+            "MaxFlankingDistance": -1.0,
+            "EnableFlankingOutsideCombat": -1,
+            "DamageMultiplier": -1.0,
+            "DamageReceivedMultiplier": -1.0,
+            "HeadshotResistance": 0.0,
+            "CanSpawnInContaminatedArea": 0,
+            "CanBeTriggeredByAI": 0,
+            "MinDistRadius": 75.0,
+            "MaxDistRadius": 12500.0,
+            "DespawnRadius": 12500.0,
+            "MinSpreadRadius": 1.0,
+            "MaxSpreadRadius": 100.0,
+            "Chance": 1.0,
+            "DespawnTime": -1.0,
+            "RespawnTime": 5.0,
+            "LoadBalancingCategory": "",
+            "ObjectClassName": "",
+            "WaypointInterpolation": "",
+            "UseRandomWaypointAsStartPoint": 1,
+            "Waypoints": [
+                [
+                    1506.1, 
+                    84.30,
+                    1454.03
                 ]
             ]
         },
@@ -590,9 +642,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1535.87,
-                    4.4149,
-                    2865.54
+                    1404.13,
+                    4.62, 
+                    2803.44
                 ]
             ]
         },
@@ -798,9 +850,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3971.12,
-                    27.45,
-                    811.889
+                    4212.39,
+                    27.8449,
+                    749.03
                 ]
             ]
         },
@@ -857,7 +909,7 @@
             ]
         },
         {
-            "Name": "roaming-mid-brdg-nw-island",
+            "Name": "roaming-mid-bridge1-nw",
             "Persist": 1,
             "Faction": "West",
             "Formation": "",
@@ -902,14 +954,14 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    2192.73,
-                    8.05,
-                    2926.19
+                    2333.85,
+                    8.40,
+                    2786.8
                 ]
             ]
         },
         {
-            "Name": "roaming-far-brdg-nw-island",
+            "Name": "roaming-mid-bridge2-nw",
             "Persist": 1,
             "Faction": "West",
             "Formation": "",
@@ -954,9 +1006,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    996.08,
-                    8.05,
-                    4118.75
+                    2191.77,
+                    8.40,
+                    2928.43
                 ]
             ]
         },

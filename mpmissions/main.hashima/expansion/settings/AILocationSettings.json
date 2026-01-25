@@ -13,11 +13,44 @@
             "Enabled": 1
         },
         {
-            "Name": "behind-stadium",
+            "Name": "stadium",
             "Position": [
-                762.046,
-                51.3201,
-                2076.32
+                826.711,
+                67.20,
+                1861.48
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "spawn-spigot-area",
+            "Position": [
+                817.987,
+                98.0277,
+                754.474
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "spawn-island-middle",
+            "Position": [
+                1359,
+                86.0153,
+                1752.97
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "ne-island-east-side",
+            "Position": [
+                3939.23,
+                50.1013,
+                3957.06
             ],
             "Radius": 100.0,
             "Type": "Local",
@@ -90,46 +123,57 @@
             "Enabled": 1
         },
         {
-            "Name": "industrial-se-island",
-            "Position": [
-                3982.62,
-                27.4066,
-                770.029
-            ],
-            "Radius": 100.0,
-            "Type": "Local",
-            "Enabled": 1
-        },
-        {
             "Name": "harbor-se-island",
             "Position": [
-                4240.09,
-                1.75,
-                1076.48
+                4272.59,
+                1.90,
+                1020.51
             ],
-            "Radius": 100.0,
+            "Radius": 85.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
             "Name": "mid-bridge-nw-island",
             "Position": [
-                2192.73,
-                8.05,
-                2926.19
+                2186.59,
+                8.35,
+                2931.48
             ],
             "Radius": 70.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "far-bridge-nw-island",
+            "Name": "mid-bridge2-nw-island",
             "Position": [
-                996.08,
-                8.05,
-                4118.75
+                2292.66,
+                8.35,
+                2829.94
             ],
             "Radius": 70.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "spigot-circle-center-island",
+            "Position": [
+                2527.87,
+                8.35,
+                2589.87
+            ],
+            "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "castle-center-island",
+            "Position": [
+                1955.11,
+                44.9508,
+                2400.04
+            ],
+            "Radius": 60.0,
             "Type": "Local",
             "Enabled": 1
         },
