@@ -4,8 +4,8 @@
     <!-- Anti-Air Quad Missile Launcher -->
     <type name="AYSA_antiAirQuadLauncher">
         <nominal>0</nominal>
-        <lifetime>10800</lifetime>
-        <restock>3600</restock>
+        <lifetime>7200</lifetime>
+        <restock>0</restock>
         <min>0</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
@@ -20,8 +20,8 @@
     <!-- Missile Launcher Magazine -->
     <type name="AYSA_missileMag">
         <nominal>0</nominal>
-        <lifetime>10800</lifetime>
-        <restock>3600</restock>
+        <lifetime>7200</lifetime>
+        <restock>0</restock>
         <min>0</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
@@ -34,8 +34,8 @@
     <!-- Anti-Air Missile Ammo -->
     <type name="AYSA_antiAirMissile">
         <nominal>0</nominal>
-        <lifetime>10800</lifetime>
-        <restock>10800</restock>
+        <lifetime>7200</lifetime>
+        <restock>0</restock>
         <min>0</min>
         <quantmin>100</quantmin>
         <quantmax>100</quantmax>
@@ -48,7 +48,7 @@
     <!-- Red Flare Ammo -->
     <type name="AYSA_redFlareAmmo">
         <nominal>0</nominal>
-        <lifetime>14400</lifetime>
+        <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>0</min>
         <quantmin>20</quantmin>
@@ -66,7 +66,7 @@
     <!-- Blue Flare Ammo -->
     <type name="AYSA_blueFlareAmmo">
         <nominal>0</nominal>
-        <lifetime>14400</lifetime>
+        <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>0</min>
         <quantmin>20</quantmin>
@@ -84,7 +84,7 @@
     <!-- Green Flare Ammo -->
     <type name="AYSA_greenFlareAmmo">
         <nominal>25</nominal>
-        <lifetime>14400</lifetime>
+        <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>20</min>
         <quantmin>20</quantmin>
@@ -102,7 +102,7 @@
     <!-- Black Box Flight Recorder -->
     <type name="AYSA_blackBox">
         <nominal>0</nominal>
-        <lifetime>14400</lifetime>
+        <lifetime>7200</lifetime>
         <restock>0</restock>
         <min>0</min>
         <quantmin>15</quantmin>

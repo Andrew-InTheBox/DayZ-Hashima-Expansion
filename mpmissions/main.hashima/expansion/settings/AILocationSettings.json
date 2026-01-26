@@ -63,7 +63,7 @@
                 4.42498,
                 2541.8
             ],
-            "Radius": 100.0,
+            "Radius": 70.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -81,11 +81,55 @@
         {
             "Name": "power-plant-sw-island",
             "Position": [
-                1535.87,
-                4.4149,
-                2865.54
+                1506.23,
+                4.7,
+                2870.0
             ],
-            "Radius": 100.0,
+            "Radius": 50.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "sw-city-1",
+            "Position": [
+                1526.6,
+                4.42494,
+                2017.76
+            ],
+            "Radius": 70.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "sw-city-2",
+            "Position": [
+                1647.2,
+                4.60798,
+                2023.56
+            ],
+            "Radius": 70.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "sw-city-3",
+            "Position": [
+                1583.16,
+                4.42488,
+                2357.46
+            ],
+            "Radius": 70.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "sw-city-4",
+            "Position": [
+                1220.34,
+                4.42496,
+                2655.04
+            ],
+            "Radius": 70.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -134,13 +178,79 @@
             "Enabled": 1
         },
         {
+            "Name": "bridge-se-1",
+            "Position": [
+                2933.16,
+                10.6304,
+                2184.38
+            ],
+            "Radius": 10.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "bridge-se-2",
+            "Position": [
+                3527.14,
+                10.6304,
+                1589.6
+            ],
+            "Radius": 10.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "bridge-se-3",
+            "Position": [
+                3812.39,
+                10.6304,
+                1308.09
+            ],
+            "Radius": 10.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "bridge-se-4",
+            "Position": [
+                4019.12,
+                10.3304,
+                1097.71
+            ],
+            "Radius": 60.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "se-island-above-industrial",
+            "Position": [
+                4167.41,
+                27.3647,
+                948.254
+            ],
+            "Radius": 25.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "se-island-industrial-2",
+            "Position": [
+                4291.24,
+                1.77492,
+                926.231
+            ],
+            "Radius": 60.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
             "Name": "mid-bridge-nw-island",
             "Position": [
                 2186.59,
                 8.35,
                 2931.48
             ],
-            "Radius": 70.0,
+            "Radius": 35.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -151,7 +261,7 @@
                 8.35,
                 2829.94
             ],
-            "Radius": 70.0,
+            "Radius": 35.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -189,6 +299,17 @@
             "Enabled": 1
         },
         {
+            "Name": "carnival-ne-island",
+            "Position": [
+                3690.08,
+                2.20777,
+                2585.89
+            ],
+            "Radius": 80.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
             "Name": "town-ne-island",
             "Position": [
                 3568.83,
@@ -196,6 +317,28 @@
                 2792.96
             ],
             "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "ne-island-above-airflield",
+            "Position": [
+                3283.31,
+                74.3162,
+                4004.34
+            ],
+            "Radius": 30.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "ne-island-above-airflield-2",
+            "Position": [
+                3557.17,
+                103.65,
+                3991.61
+            ],
+            "Radius": 30.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -213,11 +356,11 @@
         {
             "Name": "far-airstrip-ne-island",
             "Position": [
-                3341.31,
-                9.0,
-                4154.82
+                3347.08,
+                22.8756,
+                4199.12
             ],
-            "Radius": 100.0,
+            "Radius": 20.0,
             "Type": "Local",
             "Enabled": 1
         },
