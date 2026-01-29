@@ -3,7 +3,7 @@
     "AccuracyMin": 0.85,
     "AccuracyMax": 0.92,
     "ThreatDistanceLimit": 400.0,
-    "NoiseInvestigationDistanceLimit": 1000.0,
+    "NoiseInvestigationDistanceLimit": 425.0,
     "MaxFlankingDistance": 100.0,
     "EnableFlankingOutsideCombat": 0,
     "DamageMultiplier": 1.0,
