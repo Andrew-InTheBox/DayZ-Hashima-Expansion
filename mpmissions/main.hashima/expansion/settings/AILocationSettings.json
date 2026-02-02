@@ -412,6 +412,16 @@
             ],
             "Radius": 185.4923,
             "Height": 150.0
+        },
+        {
+            "Name": "Bridge-Silo-Zone",
+            "Position": [
+                2276.3,
+                2.5,
+                2800.5
+            ],
+            "Radius": 13.0,
+            "Height": 35.0
         }
     ]
 }

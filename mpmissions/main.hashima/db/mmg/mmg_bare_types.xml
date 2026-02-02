@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <types>
     <type name="MMG_JPC_Vest_dark_woodland">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>7200</restock>
         <min>1</min>
@@ -11,11 +11,11 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="clothes" />
         <usage name="Military" />
-        <value name="Tier3" />
+        <value name="Tier1" />
         <value name="Tier4" />
     </type>
     <type name="MMG_tt_Vest_dark_woodland">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>7200</restock>
         <min>1</min>
@@ -25,7 +25,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="clothes" />
         <usage name="Military" />
-        <value name="Tier3" />
+        <value name="Tier1" />
         <value name="Tier4" />
     </type>
     <type name="MMG_camelback_dark_woodland">
@@ -141,15 +141,18 @@
         <value name="Tier4" />
     </type>
     <type name="MMG_nbc_pouch">
-        <nominal>6</nominal>
+        <nominal>5</nominal>
         <lifetime>7200</lifetime>
         <restock>7200</restock>
-        <min>4</min>
+        <min>3</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="clothes" />
         <usage name="Military" />
+        <value name="Tier1" />
+        <value name="Tier4" />
+    </type>
     </type>
 </types>

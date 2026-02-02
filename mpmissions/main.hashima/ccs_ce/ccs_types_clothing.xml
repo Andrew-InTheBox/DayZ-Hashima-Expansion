@@ -1255,7 +1255,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="clothes" />
         <usage name="Military" />
-        <value name="Tier3" />
+        <value name="Tier1" />
         <value name="Tier4" />
     </type>
     <type name="CCS_Hashima_Clothing_Plate_Carrier_Vest_Purple">
@@ -1269,7 +1269,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="clothes" />
         <usage name="Military" />
-        <value name="Tier3" />
+        <value name="Tier1" />
         <value name="Tier4" />
     </type>
     <type name="CCS_Hashima_Clothing_Plate_Carrier_Vest_Red">
@@ -1283,7 +1283,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
         <category name="clothes" />
         <usage name="Military" />
-        <value name="Tier3" />
+        <value name="Tier1" />
         <value name="Tier4" />
     </type>
 
@@ -1350,10 +1350,10 @@
     </type>
 
     <type name="CCS_Hashima_Clothing_Police_Vest_Red">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>3600</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -1362,10 +1362,10 @@
         <usage name="Police" />
     </type>
     <type name="CCS_Hashima_Clothing_Police_Vest_White">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>3600</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -1375,10 +1375,10 @@
     </type>
 
     <type name="CCS_Hashima_Clothing_Press_Vest_Black">
-        <nominal>3</nominal>
+        <nominal>1</nominal>
         <lifetime>3600</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -1391,10 +1391,10 @@
         <value name="Tier4" />
     </type>
     <type name="CCS_Hashima_Clothing_Press_Vest_White">
-        <nominal>3</nominal>
+        <nominal>1</nominal>
         <lifetime>3600</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
