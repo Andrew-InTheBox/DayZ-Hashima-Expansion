@@ -1375,7 +1375,7 @@
     </type>
 
     <type name="CCS_Hashima_Clothing_Press_Vest_Black">
-        <nominal>1</nominal>
+        <nominal>2</nominal>
         <lifetime>3600</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -1391,7 +1391,7 @@
         <value name="Tier4" />
     </type>
     <type name="CCS_Hashima_Clothing_Press_Vest_White">
-        <nominal>1</nominal>
+        <nominal>2</nominal>
         <lifetime>3600</lifetime>
         <restock>0</restock>
         <min>1</min>
