@@ -26,6 +26,8 @@ background_image_path = script_dir / 'hashima-map-background.png'
 # Map extent for background image (min_x, max_x, min_z, max_z) in meters
 # Patrol coordinates are on a 5200 x 5200 scale.
 background_extent = (0, 5200, 0, 5200)
+# Fixed alignment offset for this server/map background.
+coordinate_offset = 32.0
 
 def main():
     parser = ArgumentParser(description="Plot AI patrol waypoints and AI location radii.")
@@ -34,7 +36,47 @@ def main():
         action="store_true",
         help="Plot only AILocationSettings.json circles and label them by Name.",
     )
+    parser.add_argument(
+        "--label-locations",
+        action="store_true",
+        help="Label AILocationSettings.json circles by Name while still plotting patrol data.",
+    )
+    parser.add_argument(
+        "--no-patrol-labels",
+        action="store_true",
+        help="Do not draw patrol name labels.",
+    )
+    parser.add_argument(
+        "--focus-region",
+        nargs=4,
+        type=float,
+        metavar=("MIN_X", "MAX_X", "MIN_Z", "MAX_Z"),
+        help="Zoom to a specific map region.",
+    )
+    parser.add_argument(
+        "--focus-center",
+        nargs=2,
+        type=float,
+        metavar=("X", "Z"),
+        help="Center point for zoom region.",
+    )
+    parser.add_argument(
+        "--focus-size",
+        nargs=2,
+        type=float,
+        metavar=("WIDTH", "HEIGHT"),
+        help="Width/height for --focus-center region in meters (default: 800 800).",
+    )
     args = parser.parse_args()
+
+    if args.focus_region and args.focus_center:
+        parser.error("Use either --focus-region or --focus-center, not both.")
+
+    if args.focus_size and not args.focus_center:
+        parser.error("--focus-size requires --focus-center.")
+
+    dx = coordinate_offset
+    dz = coordinate_offset
 
     patrol_file_path = None
     if not args.locations_only:
@@ -59,7 +101,7 @@ def main():
         for patrol in patrols:
             name = patrol.get("Name", "Unknown")
             waypoints = patrol.get("Waypoints", [])
-            coords = [(wp[0], wp[2]) for wp in waypoints]
+            coords = [(wp[0] + dx, wp[2] + dz) for wp in waypoints]
             if coords:
                 plot_data.append((name, coords))
 
@@ -91,15 +133,16 @@ def main():
         centroid_x = np.mean(x_coords)
         centroid_z = np.mean(z_coords)
 
-        # Add label at the centroid
-        ax.annotate(name,
-                    (centroid_x, centroid_z),
-                    xytext=(0, 6),
-                    textcoords='offset points',
-                    ha='center',
-                    va='bottom',
-                    bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=2),
-                    fontsize=6)
+        if not args.no_patrol_labels:
+            # Add patrol label at the centroid
+            ax.annotate(name,
+                        (centroid_x, centroid_z),
+                        xytext=(0, 6),
+                        textcoords='offset points',
+                        ha='center',
+                        va='bottom',
+                        bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=2),
+                        fontsize=6)
 
     # Overlay AI location radii (open red circles)
     if ai_locations:
@@ -109,7 +152,7 @@ def main():
             name = location.get('Name', 'Unknown')
             if len(position) >= 3 and radius > 0:
                 circle = Circle(
-                    (position[0], position[2]),
+                    (position[0] + dx, position[2] + dz),
                     radius,
                     fill=False,
                     edgecolor='red',
@@ -117,10 +160,10 @@ def main():
                     alpha=0.8
                 )
                 ax.add_patch(circle)
-                if args.locations_only:
+                if args.locations_only or args.label_locations:
                     ax.annotate(
                         name,
-                        (position[0], position[2]),
+                        (position[0] + dx, position[2] + dz),
                         xytext=(0, 6),
                         textcoords='offset points',
                         ha='center',
@@ -137,8 +180,20 @@ def main():
         ax.legend(loc="upper left", bbox_to_anchor=(1, 1))
     ax.grid(True)
     ax.set_aspect('equal', adjustable='box')
-    ax.set_xlim(background_extent[0], background_extent[1])
-    ax.set_ylim(background_extent[2], background_extent[3])
+    if args.focus_region:
+        min_x, max_x, min_z, max_z = args.focus_region
+    elif args.focus_center:
+        width, height = (args.focus_size if args.focus_size else (800.0, 800.0))
+        center_x, center_z = args.focus_center
+        min_x = center_x - (width / 2.0)
+        max_x = center_x + (width / 2.0)
+        min_z = center_z - (height / 2.0)
+        max_z = center_z + (height / 2.0)
+    else:
+        min_x, max_x, min_z, max_z = background_extent
+
+    ax.set_xlim(min_x, max_x)
+    ax.set_ylim(min_z, max_z)
     plt.tight_layout()
 
     # Save the plot

@@ -173,7 +173,7 @@
                 1.90,
                 1020.51
             ],
-            "Radius": 85.0,
+            "Radius": 75.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -229,17 +229,6 @@
                 948.254
             ],
             "Radius": 25.0,
-            "Type": "Local",
-            "Enabled": 1
-        },
-        {
-            "Name": "se-island-industrial-2",
-            "Position": [
-                4291.24,
-                1.77492,
-                926.231
-            ],
-            "Radius": 60.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -383,6 +372,17 @@
                 2924.31
             ],
             "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "radar-bldg-ne-island",
+            "Position": [
+                3919.93,
+                65.2892,
+                4282.59
+            ],
+            "Radius": 80.0,
             "Type": "Local",
             "Enabled": 1
         }

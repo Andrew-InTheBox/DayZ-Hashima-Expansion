@@ -108,7 +108,7 @@ def plot_ai_locations(json_file_path, output_dir=None):
 if __name__ == '__main__':
     # Default path to AILocationSettings.json
     # Adjust this path if running from a different location
-    json_path = Path(__file__).parent.parent / 'mpmissions' / 'dayzOffline.enoch' / 'expansion' / 'settings' / 'AILocationSettings.json'
+    json_path = Path(__file__).parent.parent / 'mpmissions' / 'main.hashima' / 'expansion' / 'settings' / 'AILocationSettings.json'
 
     # Output to the custom_scripts directory
     output_directory = Path(__file__).parent

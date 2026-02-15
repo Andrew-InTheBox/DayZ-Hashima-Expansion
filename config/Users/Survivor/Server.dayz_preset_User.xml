@@ -940,6 +940,10 @@
         <btn name="kU" />
     </input>
     <input name="UAPlayerModuleInvisibility" />
+    <input name="UAPlayerModuleCanBeTargetedByAI" />
+    <input name="UAPlayerModuleUnlimitedStamina" />
+    <input name="UAPlayerModuleUnlimitedAmmo" />
+    <input name="UAPlayerModuleAdminNV" />
     <input name="UAPlayerModuleStopSpectating">
         <btn name="kNumpad1" />
     </input>
