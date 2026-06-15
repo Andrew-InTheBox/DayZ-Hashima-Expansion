@@ -14,7 +14,7 @@ The `start_autoMods.bat` script handles server startup, automatic mod updates, a
 
 The script will:
 1. Build a mod list from all `@*` directories
-2. Update mods via SteamCMD (if enabled)
+2. Update mods via SteamCMD by default, or sync from a local workshop cache when configured
 3. Start the DayZ server
 4. Automatically restart when the server exits
 
@@ -28,22 +28,22 @@ Edit the variables at the top of the script:
 | `serverPort` | `2302` | Server port |
 | `serverConfig` | `serverDZ.cfg` | Server configuration file |
 | `serverProfile` | `config` | Profile folder for logs and settings |
-| `serverCPU` | `4` | CPU cores to allocate |
+| `serverCPU` | `2` | CPU cores to allocate |
 
 ### SteamCMD Auto-Updating
 
-The script can automatically update mods on each restart using SteamCMD.
+The script can automatically update mods on each restart using SteamCMD. Set `USE_STEAMCMD=0` in `.env` to sync from an existing Steam workshop cache instead.
 
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `STEAMCMD` | `C:\steamcmd\steamcmd.exe` | Path to SteamCMD |
 | `UPDATE_ON_RESTART` | `1` | Enable/disable auto-updates (1/0) |
 | `USE_STEAMCMD` | `1` | Use SteamCMD (1) or existing workshop cache (0) |
-| `WORKSHOP_PATH` | `E:\SteamLibrary\...` | Fallback workshop path when not using SteamCMD |
+| `WORKSHOP_PATH` | `E:\SteamLibrary\steamapps\workshop\content\221100` | Workshop cache path used when `USE_STEAMCMD=0` |
 
 ### Steam Authentication
 
-For authenticated downloads, credentials can be provided via a `.env` file:
+Steam credentials are only needed if `USE_STEAMCMD=1`. For authenticated SteamCMD downloads, credentials can be provided via a `.env` file:
 
 ```
 USERNAME=your_steam_username
@@ -114,6 +114,3 @@ Several other useful scripts are in that directory, use at your own risk and mak
 ### Docs files
 
 The `docs/dayz-expansion` folder contains documentation from the Expansion Wiki. You can reference these docs using your agentic code editor to help speed building out Expansion features.
-
-
-
