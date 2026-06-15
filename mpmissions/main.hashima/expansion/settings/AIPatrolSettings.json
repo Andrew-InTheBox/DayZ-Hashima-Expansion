@@ -1,5 +1,5 @@
 {
-    "m_Version": 31,
+    "m_Version": 32,
     "Enabled": 1,
     "FormationScale": -1.0,
     "DespawnTime": 600.0,
@@ -15,22 +15,14 @@
     "EnableFlankingOutsideCombat": -1,
     "DamageMultiplier": -1.0,
     "DamageReceivedMultiplier": -1.0,
+    "ShoryukenChance": 0.009999999776482582,
+    "ShoryukenDamageMultiplier": 3.0,
     "LoadBalancingCategories": {
         "Global": [
             {
                 "MinPlayers": 0,
-                "MaxPlayers": 10,
+                "MaxPlayers": 12,
                 "MaxPatrols": 35
-            },
-            {
-                "MinPlayers": 11,
-                "MaxPlayers": 20,
-                "MaxPatrols": 20
-            },
-            {
-                "MinPlayers": 21,
-                "MaxPlayers": 30,
-                "MaxPatrols": 15
             }
         ],
         "Quest": [
@@ -100,9 +92,11 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
-            "MinDistRadius": -1.0,
+            "MinDistRadius": 70.0,
             "MaxDistRadius": -1.0,
             "DespawnRadius": -1.0,
             "MinSpreadRadius": 5.0,
@@ -146,9 +140,11 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
-            "MinDistRadius": -1.0,
+            "MinDistRadius": 70.0,
             "MaxDistRadius": -1.0,
             "DespawnRadius": -1.0,
             "MinSpreadRadius": 5.0,
@@ -192,6 +188,8 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": -1.0,
@@ -238,6 +236,8 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": -1.0,
@@ -284,13 +284,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 1,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": -1.0,
             "MaxDistRadius": -1.0,
             "DespawnRadius": -1.0,
-            "MinSpreadRadius": 10.0,
-            "MaxSpreadRadius": 150.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 2.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": -2.0,
@@ -330,6 +332,8 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 1,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": -1.0,
@@ -376,13 +380,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -392,9 +398,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    711.764,
-                    9.82497,
-                    1061.67
+                    711.7639770507813,
+                    9.824970245361329,
+                    1061.6700439453126
                 ]
             ]
         },
@@ -428,13 +434,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -444,9 +452,63 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    762.046,
-                    40.3201,
-                    2076.32
+                    880.0170288085938,
+                    76.30500030517578,
+                    2061.830078125
+                ]
+            ]
+        },
+        {
+            "Name": "roaming-starting-island-east",
+            "Persist": 1,
+            "Faction": "West",
+            "Formation": "",
+            "FormationScale": 0.0,
+            "FormationLooseness": 0.0,
+            "Loadout": "PlayerSurvivorLoadout",
+            "Units": [],
+            "NumberOfAI": 1,
+            "NumberOfAIMax": 0,
+            "Behaviour": "ROAMING",
+            "LootingBehaviour": "ALL",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "DefaultStance": "STANDING",
+            "DefaultLookAngle": 0.0,
+            "CanBeLooted": 1,
+            "LootDropOnDeath": "",
+            "UnlimitedReload": 4,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "NoiseInvestigationDistanceLimit": -1.0,
+            "MaxFlankingDistance": -1.0,
+            "EnableFlankingOutsideCombat": -1,
+            "DamageMultiplier": -1.0,
+            "DamageReceivedMultiplier": -1.0,
+            "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
+            "CanSpawnInContaminatedArea": 0,
+            "CanBeTriggeredByAI": 0,
+            "MinDistRadius": 75.0,
+            "MaxDistRadius": 12500.0,
+            "DespawnRadius": 12500.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
+            "Chance": 1.0,
+            "DespawnTime": -1.0,
+            "RespawnTime": 5.0,
+            "LoadBalancingCategory": "",
+            "ObjectClassName": "",
+            "WaypointInterpolation": "",
+            "UseRandomWaypointAsStartPoint": 1,
+            "Waypoints": [
+                [
+                    1460.0,
+                    89.0,
+                    1500.0
                 ]
             ]
         },
@@ -480,13 +542,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -496,9 +560,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1370.86,
-                    4.42498,
-                    2541.8
+                    1370.8599853515626,
+                    4.424980163574219,
+                    2541.800048828125
                 ]
             ]
         },
@@ -532,13 +596,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -548,9 +614,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1809.35,
-                    15.2968,
-                    2529.93
+                    1809.3499755859376,
+                    15.296799659729004,
+                    2529.929931640625
                 ]
             ]
         },
@@ -584,13 +650,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -600,9 +668,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1535.87,
-                    4.4149,
-                    2865.54
+                    1404.1300048828126,
+                    4.619999885559082,
+                    2803.43994140625
                 ]
             ]
         },
@@ -636,13 +704,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -652,9 +722,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    2449.73,
-                    8.02499,
-                    2427.89
+                    2449.72998046875,
+                    8.02499008178711,
+                    2427.889892578125
                 ]
             ]
         },
@@ -688,13 +758,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -704,9 +776,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    2652.56,
-                    8.02489,
-                    2536.74
+                    2652.56005859375,
+                    8.024889945983887,
+                    2536.739990234375
                 ]
             ]
         },
@@ -740,13 +812,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -756,9 +830,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    2642.21,
-                    8.02488,
-                    2757.92
+                    2642.2099609375,
+                    8.024880409240723,
+                    2757.919921875
                 ]
             ]
         },
@@ -792,13 +866,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -808,9 +884,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3982.62,
-                    18.4066,
-                    770.029
+                    4125.93017578125,
+                    26.816299438476564,
+                    991.5499877929688
                 ]
             ]
         },
@@ -844,13 +920,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -860,14 +938,14 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    4240.09,
-                    1.75,
-                    1076.48
+                    4224.02001953125,
+                    1.7999999523162842,
+                    1061.68994140625
                 ]
             ]
         },
         {
-            "Name": "roaming-bridge-nw-island",
+            "Name": "roaming-mid-bridge1-nw",
             "Persist": 1,
             "Faction": "West",
             "Formation": "",
@@ -896,13 +974,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -912,14 +992,14 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    1058.49,
-                    8.0384,
-                    4060.06
+                    2333.85009765625,
+                    8.399999618530274,
+                    2786.800048828125
                 ]
             ]
         },
         {
-            "Name": "roaming-apts-nw-island",
+            "Name": "roaming-mid-bridge2-nw",
             "Persist": 1,
             "Faction": "West",
             "Formation": "",
@@ -948,13 +1028,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -964,9 +1046,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    866.729,
-                    9.406,
-                    4325.66
+                    2191.77001953125,
+                    8.399999618530274,
+                    2928.429931640625
                 ]
             ]
         },
@@ -1000,13 +1082,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -1017,8 +1101,8 @@
             "Waypoints": [
                 [
                     3277.5,
-                    2.00247,
-                    2719.41
+                    2.002470016479492,
+                    2719.409912109375
                 ]
             ]
         },
@@ -1052,13 +1136,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -1068,9 +1154,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3568.83,
-                    1.99,
-                    2792.96
+                    3568.830078125,
+                    1.9900000095367432,
+                    2792.9599609375
                 ]
             ]
         },
@@ -1104,13 +1190,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -1120,9 +1208,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3461.78,
-                    9.02496,
-                    3422.14
+                    3461.780029296875,
+                    9.024959564208985,
+                    3422.139892578125
                 ]
             ]
         },
@@ -1156,13 +1244,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -1172,9 +1262,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3341.31,
+                    3341.31005859375,
                     9.0,
-                    4154.82
+                    4154.81982421875
                 ]
             ]
         },
@@ -1208,13 +1298,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -1224,9 +1316,9 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    3740.56,
-                    2.01499,
-                    2711.57
+                    3740.56005859375,
+                    2.0149900913238527,
+                    2711.570068359375
                 ]
             ]
         },
@@ -1260,13 +1352,15 @@
             "DamageMultiplier": -1.0,
             "DamageReceivedMultiplier": -1.0,
             "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
             "CanSpawnInContaminatedArea": 0,
             "CanBeTriggeredByAI": 0,
             "MinDistRadius": 75.0,
             "MaxDistRadius": 12500.0,
             "DespawnRadius": 12500.0,
-            "MinSpreadRadius": 1.0,
-            "MaxSpreadRadius": 100.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
             "Chance": 1.0,
             "DespawnTime": -1.0,
             "RespawnTime": 5.0,
@@ -1276,9 +1370,63 @@
             "UseRandomWaypointAsStartPoint": 1,
             "Waypoints": [
                 [
-                    4541.42,
-                    2.30494,
-                    2924.31
+                    4541.419921875,
+                    2.3049399852752687,
+                    2924.31005859375
+                ]
+            ]
+        },
+        {
+            "Name": "roaming-se-bridge-middle",
+            "Persist": 1,
+            "Faction": "West",
+            "Formation": "",
+            "FormationScale": 0.0,
+            "FormationLooseness": 0.0,
+            "Loadout": "PlayerSurvivorLoadout",
+            "Units": [],
+            "NumberOfAI": 1,
+            "NumberOfAIMax": 0,
+            "Behaviour": "ROAMING",
+            "LootingBehaviour": "ALL",
+            "Speed": "WALK",
+            "UnderThreatSpeed": "JOG",
+            "DefaultStance": "STANDING",
+            "DefaultLookAngle": 0.0,
+            "CanBeLooted": 1,
+            "LootDropOnDeath": "",
+            "UnlimitedReload": 4,
+            "SniperProneDistanceThreshold": 0.0,
+            "AccuracyMin": -1.0,
+            "AccuracyMax": -1.0,
+            "ThreatDistanceLimit": -1.0,
+            "NoiseInvestigationDistanceLimit": -1.0,
+            "MaxFlankingDistance": -1.0,
+            "EnableFlankingOutsideCombat": -1,
+            "DamageMultiplier": -1.0,
+            "DamageReceivedMultiplier": -1.0,
+            "HeadshotResistance": 0.0,
+            "ShoryukenChance": -1.0,
+            "ShoryukenDamageMultiplier": -1.0,
+            "CanSpawnInContaminatedArea": 0,
+            "CanBeTriggeredByAI": 0,
+            "MinDistRadius": 75.0,
+            "MaxDistRadius": 12500.0,
+            "DespawnRadius": 12500.0,
+            "MinSpreadRadius": 0.5,
+            "MaxSpreadRadius": 1.0,
+            "Chance": 1.0,
+            "DespawnTime": -1.0,
+            "RespawnTime": 5.0,
+            "LoadBalancingCategory": "",
+            "ObjectClassName": "",
+            "WaypointInterpolation": "",
+            "UseRandomWaypointAsStartPoint": 1,
+            "Waypoints": [
+                [
+                    3477.0,
+                    10.600000381469727,
+                    1633.0
                 ]
             ]
         }

@@ -15,21 +15,33 @@
 *.bin
 *.vdf
 *.ebo
+*.mdmp
 /battlefield
+/battleye
 /bliss
 /dta
 /keys
 /addons
-/mpmissions/Expansion.chernarusplus/storage_1/
 /appcache
 /logs
+/tmp
 
+/mpmissions/Expansion.chernarusplus/storage_1/
 */storage_1/
 mpmissions/main.hashima/storage_1/
-*.mdmp
-cache.ch
 mpmissions/main.hashima/areaflags.map
+cache.ch
+dayz.gproj
+.env
 
 # Ignore heatmap session files except the example
 config/Heatmap/session_*.json
 !config/Heatmap/example_Heatmap.json
+config/ExpansionMod/Settings/SocialMediaSettings.json
+config/PermissionsFramework/Players/
+config/PermissionsFramework/Permissions/
+
+.vscode/
+.continueignore
+__pycache__/
+.mypy_cache/

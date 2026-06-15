@@ -62,6 +62,7 @@ Admin.Player.UnlimitedAmmo 2
 Admin.Player.UnlimitedStamina 2
 Admin.Player.Spectate 2
 Admin.Player.Strip 2
+Admin.Player.ClearCargo 2
 Admin.Player.Dry 2
 Admin.Player.StopBleeding 2
 Admin.Player.BrokenLegs 2
