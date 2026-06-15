@@ -2892,17 +2892,17 @@
         </attachments>
 	</type>
 	<type name="Expansion_AWM">
-		<attachments chance="0.30">
+		<attachments chance="1.00">
 			<item name="Mag_Expansion_AWM_5Rnd" chance="1.00" />
 		</attachments>
-		<attachments chance="0.20">
-			<item name="Expansion_PMII25Optic" chance="0.50" />
-			<item name="ExpansionHAMROptic" chance="0.10" />
-			<item name="ExpansionReflexMRSOptic" chance="0.05" />
-			<item name="M4_T3NRDSOptic" chance="0.05" />
+		<attachments chance="1.00">
+			<item name="Expansion_PMII25Optic" chance="0.25" />
+			<item name="ExpansionHAMROptic" chance="0.25" />
+			<item name="ExpansionReflexMRSOptic" chance="0.10" />
+			<item name="M4_T3NRDSOptic" chance="0.10" />
 			<item name="M68Optic" chance="0.10" />
 			<item name="ExpansionReflexMRSOptic" chance="0.10" />
-			<item name="ACOGOptic" chance="0.05" />
+			<item name="ACOGOptic" chance="0.30" />
 		</attachments>
 	</type>
 	<type name="Expansion_LAW">
