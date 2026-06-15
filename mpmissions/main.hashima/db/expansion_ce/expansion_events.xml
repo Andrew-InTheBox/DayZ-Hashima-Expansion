@@ -2,9 +2,9 @@
 <events>
     <!-- Vanilla Tweaks -->
     <event name="VehicleHatchback02">
-        <nominal>8</nominal>
-        <min>6</min>
-        <max>8</max>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -13,15 +13,15 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>mixed</limit>
-        <active>1</active>
+        <active>0</active>
         <children>
             <child lootmax="0" lootmin="0" max="5" min="3" type="Hatchback_02_BanditKitty"/>
         </children>
     </event>
     <event name="VehicleTruck01">
-        <nominal>8</nominal>
-        <min>5</min>
-        <max>11</max>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -30,7 +30,7 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>mixed</limit>
-        <active>1</active>
+        <active>0</active>
         <children>
             <child lootmax="0" lootmin="0" max="5" min="3" type="Truck_01_Covered_Black"/>
             <child lootmax="0" lootmin="0" max="5" min="3" type="Truck_01_Covered_Grey"/>
@@ -45,9 +45,9 @@
     <!-- Expansion content -->
     <!-- CARS -->
 	<event name="VehicleUAZ">
-        <nominal>5</nominal>
-        <min>1</min>
-        <max>7</max>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -56,7 +56,7 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>mixed</limit>
-        <active>1</active>
+        <active>0</active>
         <children>
             <child lootmax="0" lootmin="0" max="7" min="1" type="ExpansionUAZ"/>
             <child lootmax="0" lootmin="0" max="7" min="1" type="ExpansionUAZ_Black"/>
@@ -73,9 +73,9 @@
         </children>
     </event>
 	<event name="VehicleVodnik">
-        <nominal>1</nominal>
-        <min>1</min>
-        <max>2</max>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -84,15 +84,15 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>mixed</limit>
-        <active>1</active>
+        <active>0</active>
         <children>
             <child lootmax="0" lootmin="0" max="2" min="1" type="ExpansionVodnik"/>
         </children>
     </event>
 	<event name="VehicleBus">
-        <nominal>3</nominal>
-        <min>1</min>
-        <max>5</max>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -101,7 +101,7 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>mixed</limit>
-        <active>1</active>
+        <active>0</active>
         <children>
             <child lootmax="0" lootmin="0" max="5" min="1" type="ExpansionBus"/>
             <child lootmax="0" lootmin="0" max="5" min="1" type="ExpansionBus_Weeb"/>
@@ -109,9 +109,9 @@
         </children>
     </event>
     <event name="VehicleTractor">
-        <nominal>4</nominal>
-        <min>1</min>
-        <max>5</max>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -120,7 +120,7 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>mixed</limit>
-        <active>1</active>
+        <active>0</active>
         <children>
             <child lootmax="0" lootmin="0" max="5" min="1" type="ExpansionTractor"/>
             <child lootmax="0" lootmin="0" max="5" min="1" type="ExpansionTractor_Blue"/>
@@ -129,7 +129,7 @@
     </event>
     <event name="VehicleLandRover">
         <nominal>4</nominal>
-        <min>2</min>
+        <min>3</min>
         <max>5</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
@@ -152,9 +152,9 @@
     </event>
 	<!-- HELICOPTERS -->
 	<event name="VehicleMH6Helicopter">
-        <nominal>8</nominal>
-        <min>6</min>
-        <max>8</max>
+        <nominal>0</nominal>
+        <min>0</min>
+        <max>0</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -163,7 +163,7 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>mixed</limit>
-        <active>1</active>
+        <active>0</active>
         <children>
             <child lootmax="0" lootmin="0" max="2" min="1" type="ExpansionMh6"/>
             <child lootmax="0" lootmin="0" max="2" min="1" type="ExpansionMh6_Blueline"/>
@@ -225,9 +225,9 @@
         </children>
     </event>
 	<event name="VehicleGyroHelicopter">
-        <nominal>5</nominal>
-        <min>4</min>
-        <max>5</max>
+        <nominal>16</nominal>
+        <min>14</min>
+        <max>18</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>

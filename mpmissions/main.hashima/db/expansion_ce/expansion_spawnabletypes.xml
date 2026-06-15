@@ -1629,10 +1629,7 @@
 			<item name="SparkPlug" chance="0.60" />
         </attachments>
 		<attachments chance="1.00">
-			<item name="ExpansionHydraulicHoses" chance="0.60" />
-        </attachments>
-		<attachments chance="1.00">
-			<item name="HeadlightH7" chance="0.40" />
+			<item name="HeadlightH7" chance="0.50" />
         </attachments>
 	</type>
 	<!-- CARS -->
@@ -2314,19 +2311,19 @@
 	</type>
 	<type name="Expansion_Landrover">
 		<attachments chance="1.00">
-			<item name="Expansion_Landrover_Wheel" chance="0.80" />
+			<item name="Expansion_Landrover_Wheel" chance="0.00" />
 		</attachments>
 		<attachments chance="1.00">
-			<item name="Expansion_Landrover_Wheel" chance="0.80" />
+			<item name="Expansion_Landrover_Wheel" chance="0.00" />
 		</attachments>
 		<attachments chance="1.00">
-			<item name="Expansion_Landrover_Wheel" chance="0.80" />
+			<item name="Expansion_Landrover_Wheel" chance="0.00" />
 		</attachments>
 		<attachments chance="1.00">
-			<item name="Expansion_Landrover_Wheel" chance="0.80" />
+			<item name="Expansion_Landrover_Wheel" chance="0.00" />
 		</attachments>
 		<attachments chance="1.00">
-			<item name="Expansion_Landrover_Wheel" chance="0.80" />
+			<item name="Expansion_Landrover_Wheel" chance="0.00" />
 		</attachments>
 		<attachments chance="1.00">
 			<item name="CarRadiator" chance="0.30" />
