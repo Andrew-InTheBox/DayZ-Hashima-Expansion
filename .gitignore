@@ -35,9 +35,11 @@ dayz.gproj
 .env
 
 # Ignore heatmap session files except the example
+config/Heatmap/*.json
 config/Heatmap/session_*.json
 !config/Heatmap/example_Heatmap.json
 config/ExpansionMod/Settings/SocialMediaSettings.json
+config/EXTrace_Profiling_*.csv
 config/PermissionsFramework/Players/
 config/PermissionsFramework/Permissions/
 
@@ -45,3 +47,8 @@ config/PermissionsFramework/Permissions/
 .continueignore
 __pycache__/
 .mypy_cache/
+custom_scripts/*.py[cod]
+custom_scripts/.pytest_cache/
+custom_scripts/.ruff_cache/
+
+*.png

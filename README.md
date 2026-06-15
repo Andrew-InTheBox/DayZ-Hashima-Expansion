@@ -2,9 +2,72 @@
 
 This repository contains configuration files located in `./config` and `./mpmissions/Expansion.chernarusplus` directories for setting up a DayZ server on the Hashima Islands map with the Expansion mod suite.
 
-## Note on Server-Side Mods
+## Server Startup Script (start_autoMods.bat)
 
-The startup batch file `start_automods.bat` automatically loads any directory starting with "@" as a mod. Therefore, server-side mods must be named differently to avoid being loaded in this manner. In this setup, server-side mods are prefixed with "_@". Add your server-side mods manually to the startup batch file following this convention.
+The `start_autoMods.bat` script handles server startup, automatic mod updates, and restart loops.
+
+### Basic Usage
+
+```batch
+.\start_autoMods.bat
+```
+
+The script will:
+1. Build a mod list from all `@*` directories
+2. Update mods via SteamCMD (if enabled)
+3. Start the DayZ server
+4. Automatically restart when the server exits
+
+### Configuration
+
+Edit the variables at the top of the script:
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `serverName` | `Your-Servername` | Window title for the CMD process |
+| `serverPort` | `2302` | Server port |
+| `serverConfig` | `serverDZ.cfg` | Server configuration file |
+| `serverProfile` | `config` | Profile folder for logs and settings |
+| `serverCPU` | `4` | CPU cores to allocate |
+
+### SteamCMD Auto-Updating
+
+The script can automatically update mods on each restart using SteamCMD.
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `STEAMCMD` | `C:\steamcmd\steamcmd.exe` | Path to SteamCMD |
+| `UPDATE_ON_RESTART` | `1` | Enable/disable auto-updates (1/0) |
+| `USE_STEAMCMD` | `1` | Use SteamCMD (1) or existing workshop cache (0) |
+| `WORKSHOP_PATH` | `E:\SteamLibrary\...` | Fallback workshop path when not using SteamCMD |
+
+### Steam Authentication
+
+For authenticated downloads, credentials can be provided via a `.env` file:
+
+```
+USERNAME=your_steam_username
+PASSWORD=your_password
+```
+
+**Credential Caching:** After the first successful login with Steam Guard, SteamCMD stores a token in `config\config.vdf`. Subsequent logins only need the username - the script detects this automatically and skips the password.
+
+### Skipping Mods from Updates
+
+To exclude specific mods from auto-updating:
+
+| Variable | Example | Description |
+|----------|---------|-------------|
+| `SKIP_MODS` | `_@Heatmap` | Skip by folder name |
+| `SKIP_MOD_IDS` | `2854246756` | Skip by workshop ID |
+
+### Server-Side Mods
+
+Mods prefixed with `_@` are server-side only and not sent to clients. They must be added manually to the `-serverMod=` parameter in the script. Currently configured:
+
+```batch
+-serverMod=_@Heatmap;_@SpawnerBubaku
+```
 
 ## Required Mods
 
