@@ -526,6 +526,12 @@
     <input name="UAUIThumbRight">
         <btn name="x1ThumbRight" />
     </input>
+    <input name="UAUIPadLeft">
+        <btn name="x1PadLeft" />
+    </input>
+    <input name="UAUIPadRight">
+        <btn name="x1PadRight" />
+    </input>
     <input name="UAUIRightStickHorizontal">
         <btn name="x1RightThumbHorizontal" />
     </input>
@@ -900,6 +906,9 @@
         <btn name="mWheelDown" />
         <btn name="kApostrophe" />
     </input>
+    <input name="UABuldAlignToTerrain">
+        <btn name="k9" />
+    </input>
     <input name="UACOTModuleToggleCOT">
         <btn name="kEnd" />
     </input>
@@ -1104,6 +1113,26 @@
         <btn name="kE" />
         <btn name="x1ShoulderRight" />
     </input>
+    <input name="UAExpansionHeliTrimSet">
+        <btn name="kRControl">
+            <btn name="kNumpad5" />
+        </btn>
+    </input>
+    <input name="UAExpansionHeliTrimRelease">
+        <btn name="kRControl">
+            <btn name="kDecimal" />
+        </btn>
+    </input>
+    <input name="UAExpansionHeliTrimCyclic">
+        <btn name="kRControl">
+            <btn name="kNumpad4" />
+        </btn>
+    </input>
+    <input name="UAExpansionHeliTrimAntiTorque">
+        <btn name="kRControl">
+            <btn name="kNumpad1" />
+        </btn>
+    </input>
     <input name="UAExpansionHeliCargoDoorUp" />
     <input name="UAExpansionHeliCargoDoorDown" />
     <input name="UAExpansionPlaneFlare">
@@ -1165,32 +1194,12 @@
     <input name="UAExpansionBoatTurbo">
         <btn name="kLShift" />
     </input>
-    <input name="UAExpansionBikeGearUp">
-        <btn name="kE" />
-    </input>
-    <input name="UAExpansionBikeGearDown">
-        <btn name="kQ" />
-    </input>
-    <input name="UAExpansionBikeMoveForward">
-        <btn name="kW" />
-    </input>
-    <input name="UAExpansionBikeMoveBackward">
-        <btn name="kS" />
-    </input>
-    <input name="UAExpansionBikeRotateLeft">
-        <btn name="kA" />
-    </input>
-    <input name="UAExpansionBikeRotateRight">
-        <btn name="kD" />
-    </input>
-    <input name="UAExpansionBikeGentle">
-        <btn name="kLControl" />
-    </input>
-    <input name="UAExpansionBikeTurbo">
-        <btn name="kLShift" />
-    </input>
     <input name="UAExpansionCarRefill">
         <btn name="kR" />
+    </input>
+    <input name="UAExpansionVehicleCenterCamera">
+        <btn name="kNumpad5" />
+        <btn name="x1ThumbRight" />
     </input>
     <input name="eAICommandMenu">
         <btn name="kT" />
