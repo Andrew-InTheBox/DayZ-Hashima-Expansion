@@ -6,11 +6,13 @@ from pathlib import Path
 import numpy as np
 from argparse import ArgumentParser
 
-# Get script directory
+# Get script and repo directories
 script_dir = Path(__file__).resolve().parent
+custom_scripts_dir = script_dir.parent
+repo_root = custom_scripts_dir.parent
 
 # Input file paths (relative to repo root; mpmissions subfolder varies by project)
-mpmissions_dir = script_dir.parent / 'mpmissions'
+mpmissions_dir = repo_root / 'mpmissions'
 
 
 def resolve_first(glob_pattern):
@@ -19,10 +21,10 @@ def resolve_first(glob_pattern):
 
 # Generate output filename with timestamp
 output_filename = f"{datetime.now().strftime('%Y%m%d%H%M')}_patrols.png"
-output_path = script_dir / output_filename
+output_path = script_dir / 'output' / output_filename
 
 # Background image (relative to custom_scripts)
-background_image_path = script_dir / 'hashima-map-background.png'
+background_image_path = custom_scripts_dir / 'assets' / 'hashima-map-background.png'
 # Map extent for background image (min_x, max_x, min_z, max_z) in meters
 # Patrol coordinates are on a 5200 x 5200 scale.
 background_extent = (0, 5200, 0, 5200)

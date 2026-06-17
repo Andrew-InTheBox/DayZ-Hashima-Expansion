@@ -108,10 +108,11 @@ def plot_ai_locations(json_file_path, output_dir=None):
 if __name__ == '__main__':
     # Default path to AILocationSettings.json
     # Adjust this path if running from a different location
-    json_path = Path(__file__).parent.parent / 'mpmissions' / 'main.hashima' / 'expansion' / 'settings' / 'AILocationSettings.json'
+    repo_root = Path(__file__).resolve().parents[2]
+    json_path = repo_root / 'mpmissions' / 'main.hashima' / 'expansion' / 'settings' / 'AILocationSettings.json'
 
-    # Output to the custom_scripts directory
-    output_directory = Path(__file__).parent
+    # Output to this script category's output directory
+    output_directory = Path(__file__).resolve().parent / 'output'
 
     print(f"Reading AI locations from: {json_path}")
     plot_ai_locations(json_path, output_directory)

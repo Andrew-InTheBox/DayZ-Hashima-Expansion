@@ -8,10 +8,12 @@ import matplotlib.pyplot as plt
 
 # Get script directory
 script_dir = Path(__file__).resolve().parent
+custom_scripts_dir = script_dir.parent
+repo_root = custom_scripts_dir.parent
 
 # Inputs (relative to repo root)
-heatmap_dir = script_dir.parent / 'config' / 'Heatmap'
-background_image_path = script_dir / 'hashima-map-background.png'
+heatmap_dir = repo_root / 'config' / 'Heatmap'
+background_image_path = custom_scripts_dir / 'assets' / 'hashima-map-background.png'
 
 # Map extent for background image (min_x, max_x, min_z, max_z) in meters
 background_extent = (0, 5200, 0, 5200)
@@ -21,7 +23,7 @@ max_radius_m = 120.0
 
 # Output file
 output_filename = f"{datetime.now().strftime('%Y%m%d%H%M')}_ai_tracks_within_{int(max_radius_m)}m.png"
-output_path = script_dir / output_filename
+output_path = script_dir / 'output' / output_filename
 
 
 def iter_ai_tracks(heatmap_path):
