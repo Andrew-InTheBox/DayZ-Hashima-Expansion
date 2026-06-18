@@ -1224,6 +1224,9 @@
     <input name="eAITestUDDecrease">
         <btn name="kDown" />
     </input>
+    <input name="UAExpansionBookToggle">
+        <btn name="kB" />
+    </input>
     <controller name="PCKeyboard">
         <limit name="doubleclick" value="0.500000" />
         <limit name="hold" value="0.330000" />
