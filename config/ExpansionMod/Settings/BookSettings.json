@@ -6,7 +6,7 @@
     "EnableServerRulesTab": 1,
     "EnableTerritoryTab": 1,
     "EnableBookMenu": 1,
-    "CreateBookmarks": 0,
+    "CreateBookmarks": 1,
     "ShowHaBStats": 1,
     "ShowPlayerFaction": 0,
     "RuleCategories": [
@@ -56,7 +56,7 @@
     ],
     "Links": [
         {
-            "Name": "Discord",
+            "Name": "Join Discord",
             "URL": "https://discord.gg/ry3ScmsGm",
             "IconName": "Discord",
             "IconColor": -9270822
@@ -87,10 +87,24 @@
                     "DescriptionText": "Roaming AI patrols are active. Some bots may look like players, so stay alert when moving through the map."
                 },
                 {
-                    "DescriptionText": "The on-connect server message remains enabled for quick reminders. Longer-lived server info should live here in the book."
+                    "DescriptionText": "Check the Discord link on the server info page when you need help or want to report a problem."
+                }
+            ]
+        },
+        {
+            "CategoryName": "Airborne AI",
+            "Descriptions": [
+                {
+                    "DescriptionText": "Every few hours, a hostile aircraft may fly over the island. If it spots you, it can drop several hostile AI nearby who will hunt you."
                 },
                 {
-                    "DescriptionText": "Check the Discord link on the server info page when you need help or want to report a problem."
+                    "DescriptionText": "Reinforcements flares for the flare gun call in a friendly aircraft. When fired, it will drop a few friendly bots near your location."
+                },
+                {
+                    "DescriptionText": "Each party member can approach one friendly bot and press F to recruit them. Recruited bots will follow you and fight alongside you."
+                },
+                {
+                    "DescriptionText": "Call reinforcements from wide, flat ground when possible. If they drop into water, they may not be able to get out, and they can sometimes die if they hit trees while landing."
                 }
             ]
         }
