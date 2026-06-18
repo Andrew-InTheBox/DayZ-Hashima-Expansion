@@ -1,0 +1,26 @@
+{
+    "BubakObjectLocations": [
+        {
+            "name": "Prison",
+            "objects": [
+                "ZmbF_BlueCollarFat_Blue"
+            ],
+            "number": 2,
+            "pos": [
+                "2737 0 1602",
+                "2376 0 1509",
+                "3127 0 1200"
+            ]
+        },
+        {
+            "name": "Skalisty",
+            "objects": [
+                "ZmbF_BlueCollarFat_Blue"
+            ],
+            "number": 1,
+            "pos": [
+                "13200 0 3500"
+            ]
+        }
+    ]
+}
