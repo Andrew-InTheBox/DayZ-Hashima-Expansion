@@ -81,13 +81,56 @@
             ]
         },
         {
-            "CategoryName": "Gameplay Notes",
+            "CategoryName": "PvE Reports",
             "Descriptions": [
                 {
-                    "DescriptionText": "Roaming AI patrols are active. Some bots may look like players, so stay alert when moving through the map."
+                    "DescriptionText": "This is a PvE server. If you think another player shot you, check the kill feed first. Roaming bots can look like players and may be the real attacker."
                 },
                 {
-                    "DescriptionText": "Check the Discord link on the server info page when you need help or want to report a problem."
+                    "DescriptionText": "If the kill feed shows a player broke PvE rules, report it in Discord with the player's name, the time of the incident, and your time zone."
+                },
+                {
+                    "DescriptionText": "Use the Discord link on the server info page for reports, questions, and support."
+                }
+            ]
+        },
+        {
+            "CategoryName": "Vehicles",
+            "Descriptions": [
+                {
+                    "DescriptionText": "Gyrocopters are the only realistically drivable vehicle type on the map. If you want reliable transportation, plan around finding and repairing one."
+                },
+                {
+                    "DescriptionText": "Gyrocopters need a spark plug, a helicopter battery, and hydraulic fluid before they can be used. They also need fuel, so check the tank before taking off."
+                },
+                {
+                    "DescriptionText": "A few Land Rovers may spawn, but they usually appear without wheels and are mainly intended as communal storage."
+                },
+                {
+                    "DescriptionText": "With enough work, parts, and luck, a Land Rover can still be repaired and driven, but treat that as a long-term project rather than normal transportation."
+                }
+            ]
+        },
+        {
+            "CategoryName": "AI Bots",
+            "Descriptions": [
+                {
+                    "DescriptionText": "There are three main AI threats on this server: airborne AI, roaming bots, and patrol bots guarding crashed helicopter wrecks."
+                },
+                {
+                    "DescriptionText": "Airborne AI has its own book section. Hostile aircraft can spot players and drop hostile bots nearby, while reinforcements flares can call friendly bots."
+                },
+                {
+                    "DescriptionText": "Roaming bots spawn with a bare player loadout, move around the map, and loot as they go. They can be very dangerous, and they are attracted to gunfire."
+                },
+                {
+                    "DescriptionText": "Roaming bots can carry some of the best loot because they upgrade their gear over time. If you cannot find a plate carrier, try hunting a roaming bot that has survived for a while."
+                },
+                {
+                    "DescriptionText": "Crashed helicopter wrecks are meant to be dangerous. Up to 5 patrol bots with military gear may defend a crash site."
+                },
+                {
+                    "DescriptionText": "Roaming bots can also be attracted to helicopter crash sites. Both the patrol bots and roaming bots will be hostile to you, so gear up and plan carefully before rushing in."
                 }
             ]
         },
