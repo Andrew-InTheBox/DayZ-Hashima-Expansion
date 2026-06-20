@@ -421,7 +421,7 @@
                 2800.5
             ],
             "Radius": 20.0,
-            "Height": 45.0
+            "Height": 60.0
         },
         {
             "Name": "Hashima-South-Trapdoors-West",
@@ -431,7 +431,7 @@
                 1767.03
             ],
             "Radius": 10.36,
-            "Height": 20.0
+            "Height": 50.0
         },
         {
             "Name": "Hashima-South-Trapdoors-Center",
@@ -441,7 +441,7 @@
                 1767.2
             ],
             "Radius": 11.57,
-            "Height": 20.0
+            "Height": 50.0
         },
         {
             "Name": "Hashima-South-Trapdoors-East",
@@ -451,16 +451,46 @@
                 1767.315
             ],
             "Radius": 11.48,
-            "Height": 20.0
+            "Height": 50.0
         },
         {
             "Name": "Hashima-Spigot-SnackStands",
             "Position": [
-                1859.07,
-                38.8682,
-                1615.73
+                2535.76,
+                13.845,
+                2525.985
             ],
-            "Radius": 10.0,
+            "Radius": 7.7956,
+            "Height": 30.0
+        },
+        {
+            "Name": "broken-bridge",
+            "Position": [
+                2923.265,
+                8.6735,
+                2621.095
+            ],
+            "Radius": 48.7707,
+            "Height": 45.0
+        },
+        {
+            "Name": "Japanese-House-1",
+            "Position": [
+                3536.945,
+                2.5379,
+                2772.345
+            ],
+            "Radius": 19.0,
+            "Height": 30.0
+        },
+        {
+            "Name": "Japanese-House-2",
+            "Position": [
+                1381.25,
+                87.8791,
+                1745.88
+            ],
+            "Radius": 11.0,
             "Height": 30.0
         }
     ]
