@@ -452,6 +452,16 @@
             ],
             "Radius": 11.48,
             "Height": 20.0
+        },
+        {
+            "Name": "Hashima-Spigot-SnackStands",
+            "Position": [
+                1859.07,
+                38.8682,
+                1615.73
+            ],
+            "Radius": 10.0,
+            "Height": 30.0
         }
     ]
 }
