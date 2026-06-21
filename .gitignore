@@ -57,6 +57,8 @@ __pycache__/
 custom_scripts/*.py[cod]
 custom_scripts/.pytest_cache/
 custom_scripts/.ruff_cache/
+custom_scripts/**/output/*
+!custom_scripts/**/output/.gitkeep
 
 *.png
 
