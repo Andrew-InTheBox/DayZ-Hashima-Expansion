@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 from datetime import datetime
 from pathlib import Path
+from argparse import ArgumentParser
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 CUSTOM_SCRIPTS_DIR = SCRIPT_DIR.parent
@@ -20,13 +21,14 @@ BACKGROUND_EXTENT = (0, 5200, 0, 5200)
 COORDINATE_OFFSET = 32.0
 
 
-def plot_ai_locations(json_file_path, output_dir=None):
+def plot_ai_locations(json_file_path, output_dir=None, label_points=True):
     """
     Read AILocationSettings.json and create a map plot of AI location circles.
 
     Args:
         json_file_path: Path to the AILocationSettings.json file
         output_dir: Directory to save the output image (defaults to current directory)
+        label_points: Whether to label RoamingLocations and NoGoAreas by name
     """
     # Read the JSON file
     with open(json_file_path, 'r') as f:
@@ -128,30 +130,30 @@ def plot_ai_locations(json_file_path, output_dir=None):
             zorder=8,
         )
 
-    # Add labels for each point
-    for circle_data in roaming_circles:
-        ax.annotate(
-            circle_data['name'],
-            (circle_data['x'], circle_data['z']),
-            fontsize=5.5,
-            alpha=0.85,
-            xytext=(3, 3),
-            textcoords='offset points',
-            bbox=dict(facecolor='white', alpha=0.65, edgecolor='none', pad=1.0),
-            zorder=6,
-        )
+    if label_points:
+        for circle_data in roaming_circles:
+            ax.annotate(
+                circle_data['name'],
+                (circle_data['x'], circle_data['z']),
+                fontsize=5.5,
+                alpha=0.85,
+                xytext=(3, 3),
+                textcoords='offset points',
+                bbox=dict(facecolor='white', alpha=0.65, edgecolor='none', pad=1.0),
+                zorder=6,
+            )
 
-    for circle_data in no_go_circles:
-        ax.annotate(
-            circle_data['name'],
-            (circle_data['x'], circle_data['z']),
-            fontsize=6,
-            alpha=0.95,
-            xytext=(4, 4),
-            textcoords='offset points',
-            bbox=dict(facecolor='white', alpha=0.8, edgecolor='none', pad=1.2),
-            zorder=9,
-        )
+        for circle_data in no_go_circles:
+            ax.annotate(
+                circle_data['name'],
+                (circle_data['x'], circle_data['z']),
+                fontsize=6,
+                alpha=0.95,
+                xytext=(4, 4),
+                textcoords='offset points',
+                bbox=dict(facecolor='white', alpha=0.8, edgecolor='none', pad=1.2),
+                zorder=9,
+            )
 
     # Set labels and title
     ax.set_xlabel('X Coordinate (meters)', fontsize=12)
@@ -195,10 +197,18 @@ def plot_ai_locations(json_file_path, output_dir=None):
 
 
 if __name__ == '__main__':
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--no-labels",
+        action="store_true",
+        help="Do not label RoamingLocations or NoGoAreas.",
+    )
+    args = parser.parse_args()
+
     json_path = REPO_ROOT / 'mpmissions' / 'main.hashima' / 'expansion' / 'settings' / 'AILocationSettings.json'
 
     # Output to this script category's output directory
     output_directory = SCRIPT_DIR / 'output'
 
     print(f"Reading AI locations from: {json_path}")
-    plot_ai_locations(json_path, output_directory)
+    plot_ai_locations(json_path, output_directory, label_points=not args.no_labels)

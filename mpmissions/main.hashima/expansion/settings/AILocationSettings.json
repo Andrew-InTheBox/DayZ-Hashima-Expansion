@@ -30,7 +30,7 @@
                 98.0277,
                 754.474
             ],
-            "Radius": 100.0,
+            "Radius": 70.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -96,7 +96,7 @@
                 4.42494,
                 2017.76
             ],
-            "Radius": 70.0,
+            "Radius": 60.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -107,7 +107,7 @@
                 4.60798,
                 2023.56
             ],
-            "Radius": 70.0,
+            "Radius": 60.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -140,7 +140,7 @@
                 8.02499,
                 2427.89
             ],
-            "Radius": 100.0,
+            "Radius": 60.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -151,7 +151,7 @@
                 8.02489,
                 2536.74
             ],
-            "Radius": 100.0,
+            "Radius": 60.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -162,7 +162,7 @@
                 8.02488,
                 2757.92
             ],
-            "Radius": 100.0,
+            "Radius": 60.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -217,7 +217,7 @@
                 10.3304,
                 1097.71
             ],
-            "Radius": 60.0,
+            "Radius": 30.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -233,46 +233,24 @@
             "Enabled": 1
         },
         {
-            "Name": "mid-bridge-nw-island",
-            "Position": [
-                2186.59,
-                8.35,
-                2931.48
-            ],
-            "Radius": 35.0,
-            "Type": "Local",
-            "Enabled": 1
-        },
-        {
-            "Name": "mid-bridge2-nw-island",
-            "Position": [
-                2292.66,
-                8.35,
-                2829.94
-            ],
-            "Radius": 35.0,
-            "Type": "Local",
-            "Enabled": 1
-        },
-        {
             "Name": "spigot-circle-center-island",
             "Position": [
                 2527.87,
                 8.35,
                 2589.87
             ],
-            "Radius": 100.0,
+            "Radius": 40.0,
             "Type": "Local",
             "Enabled": 1
         },
         {
-            "Name": "castle-center-island",
+            "Name": "sw-island-castle",
             "Position": [
                 1955.11,
                 44.9508,
                 2400.04
             ],
-            "Radius": 60.0,
+            "Radius": 30.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -349,7 +327,7 @@
                 22.8756,
                 4199.12
             ],
-            "Radius": 20.0,
+            "Radius": 50.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -361,6 +339,17 @@
                 2711.57
             ],
             "Radius": 100.0,
+            "Type": "Local",
+            "Enabled": 1
+        },
+        {
+            "Name": "ne-island-prison",
+            "Position": [
+                3766.86,
+                2.01488,
+                2322.54
+            ],
+            "Radius": 25.0,
             "Type": "Local",
             "Enabled": 1
         },
@@ -492,6 +481,16 @@
             ],
             "Radius": 11.0,
             "Height": 30.0
+        },
+        {
+            "Name": "Hashima-Spigot-Ladder-Bottom",
+            "Position": [
+                2508.95,
+                8.20196,
+                2471.79
+            ],
+            "Radius": 5.0,
+            "Height": 75.0
         }
     ]
 }
