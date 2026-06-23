@@ -491,6 +491,16 @@
             ],
             "Radius": 5.0,
             "Height": 75.0
+        },
+        {
+            "Name": "sw-island-crane-bldg",
+            "Position": [
+                4231.57,
+                1.77493,
+                924.97
+            ],
+            "Radius": 18.0,
+            "Height": 60.0
         }
     ]
 }
