@@ -922,7 +922,7 @@
         <cargo chance="0.01">
             <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
         </cargo>
-        <cargo chance="0.10">
+        <cargo chance="0.20">
             <item name="CCS_KeyCard_1" chance="0.3" />
             <item name="CCS_KeyCard_5" chance="0.3" />
             <item name="CCS_KeyCard_6" chance="0.3" />
@@ -934,7 +934,7 @@
         <cargo chance="0.01">
             <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
         </cargo>
-        <cargo chance="0.10">
+        <cargo chance="0.20">
             <item name="CCS_KeyCard_1" chance="0.3" />
             <item name="CCS_KeyCard_5" chance="0.3" />
             <item name="CCS_KeyCard_6" chance="0.3" />
@@ -945,7 +945,7 @@
         <cargo chance="0.01">
             <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
         </cargo>
-        <cargo chance="0.10">
+        <cargo chance="0.20">
             <item name="CCS_KeyCard_3" chance="0.3" />
         </cargo>
     </type>
@@ -955,7 +955,7 @@
         <cargo chance="0.01">
             <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
         </cargo>
-        <cargo chance="0.10">
+        <cargo chance="0.20">
             <item name="CCS_KeyCard_3" chance="0.3" />
         </cargo>
     </type>
@@ -977,7 +977,7 @@
         <cargo chance="0.01">
             <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
         </cargo>
-        <cargo chance="0.10">
+        <cargo chance="0.20">
             <item name="CCS_KeyCard_2" chance="0.3" />
         </cargo>
     </type>
@@ -987,7 +987,7 @@
         <cargo chance="0.01">
             <item name="CCS_Hashima_Medical_Antidote" chance="1.0" />
         </cargo>
-        <cargo chance="0.10">
+        <cargo chance="0.20">
             <item name="CCS_KeyCard_2" chance="0.3" />
         </cargo>
     </type>
