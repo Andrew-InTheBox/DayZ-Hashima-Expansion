@@ -590,10 +590,10 @@
         <usage name="Firefighter" />
     </type>
     <type name="CCS_Hashima_Tool_Jerrycan">
-        <nominal>5</nominal>
+        <nominal>12</nominal>
         <lifetime>5400</lifetime>
         <restock>0</restock>
-        <min>3</min>
+        <min>9</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
