@@ -403,16 +403,6 @@
             "Height": 150.0
         },
         {
-            "Name": "Bridge-Silo-Zone",
-            "Position": [
-                2276.3,
-                2.5,
-                2800.5
-            ],
-            "Radius": 20.0,
-            "Height": 60.0
-        },
-        {
             "Name": "Hashima-South-Trapdoors-West",
             "Position": [
                 919.021,
@@ -500,6 +490,16 @@
                 924.97
             ],
             "Radius": 18.0,
+            "Height": 60.0
+        },
+        {
+            "Name": "nw-bridge-ladder-bldg",
+            "Position": [
+                2288.59,
+                2.15403,
+                2778.66
+            ],
+            "Radius": 6.0,
             "Height": 60.0
         }
     ]
