@@ -2006,4 +2006,19 @@
 			<item name="UniversalLight" 				chance="0.15" />
 		</attachments>
 	</type>
+<!-- NBC POUCH - spawns full of NBC gear -->
+	<type name="MMG_nbc_pouch">
+		<attachments chance="1.00">
+			<item name="NBCJacketGray" 		chance="1.00" />
+			<item name="NBCPantsGray" 		chance="1.00" />
+			<item name="NBCBootsGray" 		chance="1.00" />
+			<item name="NBCHoodGray" 		chance="1.00" />
+			<item name="NBCGlovesGray" 		chance="1.00" />
+			<item name="GasMask" 			chance="1.00">
+				<attachments chance="1.00">
+					<item name="GasMask_Filter" 	chance="1.00" />
+				</attachments>
+			</item>
+		</attachments>
+	</type>
 </spawnabletypes>

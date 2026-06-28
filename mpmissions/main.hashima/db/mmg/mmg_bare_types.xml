@@ -141,10 +141,10 @@
         <value name="Tier4" />
     </type>
     <type name="MMG_nbc_pouch">
-        <nominal>5</nominal>
+        <nominal>12</nominal>
         <lifetime>7200</lifetime>
         <restock>7200</restock>
-        <min>3</min>
+        <min>9</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
