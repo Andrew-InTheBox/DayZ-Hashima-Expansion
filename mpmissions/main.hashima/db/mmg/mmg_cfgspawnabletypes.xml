@@ -2006,19 +2006,47 @@
 			<item name="UniversalLight" 				chance="0.15" />
 		</attachments>
 	</type>
-<!-- NBC POUCH - spawns full of NBC gear -->
-	<type name="MMG_nbc_pouch">
-		<attachments chance="1.00">
-			<item name="NBCJacketGray" 		chance="1.00" />
-			<item name="NBCPantsGray" 		chance="1.00" />
-			<item name="NBCBootsGray" 		chance="1.00" />
-			<item name="NBCHoodGray" 		chance="1.00" />
-			<item name="NBCGlovesGray" 		chance="1.00" />
-			<item name="GasMask" 			chance="1.00">
-				<attachments chance="1.00">
-					<item name="GasMask_Filter" 	chance="1.00" />
-				</attachments>
-			</item>
-		</attachments>
-	</type>
+	<!-- NBC POUCH - spawns full of NBC gear -->
+		<type name="MMG_nbc_pouch">
+			<attachments chance="1.00">
+				<item name="CCS_Hashima_Clothing_NBC_Jacket_Black" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Jacket_Green" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Jacket_Purple" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Jacket_Red" 		chance="0.25" />
+			</attachments>
+			<attachments chance="1.00">
+				<item name="CCS_Hashima_Clothing_NBC_Pants_Black" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Pants_Green" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Pants_Purple" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Pants_Red" 			chance="0.25" />
+			</attachments>
+			<attachments chance="1.00">
+				<item name="CCS_Hashima_Clothing_NBC_Boots_Black" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Boots_Green" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Boots_Purple" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Boots_Red" 			chance="0.25" />
+			</attachments>
+			<attachments chance="1.00">
+				<item name="CCS_Hashima_Clothing_NBC_Hood_Black" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Hood_Green" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Hood_Purple" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Hood_Red" 			chance="0.25" />
+			</attachments>
+			<attachments chance="1.00">
+				<item name="CCS_Hashima_Clothing_NBC_Gloves_Black" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Gloves_Green" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Gloves_Purple" 		chance="0.25" />
+				<item name="CCS_Hashima_Clothing_NBC_Gloves_Red" 		chance="0.25" />
+			</attachments>
+			<attachments chance="1.00">
+				<item name="GasMask" 			chance="1.00">
+					<attachments chance="1.00">
+						<item name="CCS_Hashima_Tool_Gas_Mask_Filter_Black" 	chance="0.25" />
+						<item name="CCS_Hashima_Tool_Gas_Mask_Filter_Green" 	chance="0.25" />
+						<item name="CCS_Hashima_Tool_Gas_Mask_Filter_Purple" 	chance="0.25" />
+						<item name="CCS_Hashima_Tool_Gas_Mask_Filter_Red" 		chance="0.25" />
+					</attachments>
+				</item>
+			</attachments>
+		</type>
 </spawnabletypes>
