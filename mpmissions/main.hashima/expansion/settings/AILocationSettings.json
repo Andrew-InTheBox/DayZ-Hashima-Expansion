@@ -501,6 +501,16 @@
             ],
             "Radius": 6.0,
             "Height": 60.0
+        },
+        {
+            "Name": "japanese-house-3",
+            "Position": [
+                1364.2,
+                65.6041,
+                1658.18
+            ],
+            "Radius": 6.0,
+            "Height": 40.0
         }
     ]
 }
