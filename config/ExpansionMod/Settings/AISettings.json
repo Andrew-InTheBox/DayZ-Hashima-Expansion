@@ -18,7 +18,7 @@
     "AggressionTimeout": 120.0,
     "GuardAggressionTimeout": 150.0,
     "Manners": 0,
-    "MemeLevel": 1,
+    "MemeLevel": 0,
     "CanRecruitFriendly": 1,
     "CanRecruitGuards": 0,
     "MaxRecruitableAI": 1,
