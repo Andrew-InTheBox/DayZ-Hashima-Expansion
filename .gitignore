@@ -33,6 +33,12 @@
 /logs
 /tmp
 
+# SteamCMD install-state and bundled redist/companion-tool artifacts from app_update 223350
+/steamapps/
+/_CommonRedist/
+/server_manager/
+/steam_appid.txt
+
 /mpmissions/Expansion.chernarusplus/storage_1/
 */storage_1/
 mpmissions/main.hashima/storage_1/
@@ -40,6 +46,11 @@ mpmissions/main.hashima/areaflags.map
 cache.ch
 dayz.gproj
 .env
+
+# Stock vanilla mission templates re-synced by every SteamCMD server app_update; unused (server loads main.hashima)
+/mpmissions/dayzOffline.chernarusplus/
+/mpmissions/dayzOffline.enoch/
+/mpmissions/dayzOffline.sakhal/
 
 # Ignore heatmap session files except the example
 config/Heatmap/*.json

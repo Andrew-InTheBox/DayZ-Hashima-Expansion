@@ -48,7 +48,8 @@ if defined PASSWORD set "STEAM_PASS=%PASSWORD%"
 :: Off by default: opt in once you've confirmed it behaves as expected on this machine.
 :: ============================================
 if not defined ENABLE_SERVER_UPDATE set "ENABLE_SERVER_UPDATE=0"
-:: DayZ Server tool AppID (confirmed via https://steamdb.info/app/223350/) - anonymous login works, no game ownership needed
+:: DayZ Server tool AppID (https://steamdb.info/app/223350/) - anonymous login gets "No subscription" on this account;
+:: uses the same STEAM_LOGIN/STEAM_PASS as mod updates (via .env) instead
 if not defined SERVER_APPID set "SERVER_APPID=223350"
 :: Full validate re-hashes every server file (slow, ~15GB); leave 0 for routine restarts, set to 1 occasionally to repair corruption
 if not defined VALIDATE_SERVER_FILES set "VALIDATE_SERVER_FILES=0"
@@ -102,10 +103,11 @@ goto :eof
 
 :update_server_files_steamcmd
 if not exist "%STEAMCMD%" goto :steamcmd_missing
+call :resolve_steam_login
 set "VALIDATE_ARG="
 if "%VALIDATE_SERVER_FILES%"=="1" set "VALIDATE_ARG=validate"
 echo (%time%) Updating DayZ server files in "%GAME_INSTALL_DIR%" (appid %SERVER_APPID%)...
-"%STEAMCMD%" +login anonymous +force_install_dir "%GAME_INSTALL_DIR%" +app_update %SERVER_APPID% %VALIDATE_ARG% +quit
+"%STEAMCMD%" +force_install_dir "%GAME_INSTALL_DIR%" %LOGIN_ARGS% +app_update %SERVER_APPID% %VALIDATE_ARG% +quit
 goto :eof
 
 :update_server_files_copy
@@ -133,18 +135,8 @@ goto :eof
 :update_with_steamcmd
 if not exist "%STEAMCMD%" goto :steamcmd_missing
 
-for %%I in ("%STEAMCMD%") do set "STEAMCMD_DIR=%%~dpI"
+call :resolve_steam_login
 set "WORKSHOP_DIR=%STEAMCMD_DIR%steamapps\workshop\content\%WORKSHOP_APPID%"
-
-set "LOGIN_ARGS=+login %STEAM_LOGIN%"
-if /i "%STEAM_LOGIN%"=="anonymous" set "LOGIN_ARGS=+login anonymous"
-if /i not "%STEAM_LOGIN%"=="anonymous" (
-  if exist "%STEAMCMD_DIR%config\config.vdf" (
-    set "LOGIN_ARGS=+login %STEAM_LOGIN%"
-  ) else (
-    if not "%STEAM_PASS%"=="" set "LOGIN_ARGS=+login %STEAM_LOGIN% %STEAM_PASS% %STEAM_GUARD%"
-  )
-)
 
 set "STEAMCMD_SCRIPT=%STEAMCMD_DIR%steamcmd_workshop.txt"
 set "QUEUED=0"
@@ -309,6 +301,19 @@ if exist "%STEAMCMD_DIR%config\config.vdf" (
   echo ^(%time%^) WARNING: SteamCMD config token missing: "%STEAMCMD_DIR%config\config.vdf"
 )
 endlocal & goto :eof
+
+:resolve_steam_login
+for %%I in ("%STEAMCMD%") do set "STEAMCMD_DIR=%%~dpI"
+set "LOGIN_ARGS=+login %STEAM_LOGIN%"
+if /i "%STEAM_LOGIN%"=="anonymous" set "LOGIN_ARGS=+login anonymous"
+if /i not "%STEAM_LOGIN%"=="anonymous" (
+  if exist "%STEAMCMD_DIR%config\config.vdf" (
+    set "LOGIN_ARGS=+login %STEAM_LOGIN%"
+  ) else (
+    if not "%STEAM_PASS%"=="" set "LOGIN_ARGS=+login %STEAM_LOGIN% %STEAM_PASS% %STEAM_GUARD%"
+  )
+)
+goto :eof
 
 :steamcmd_missing
 echo (%time%) SteamCMD not found at "%STEAMCMD%". Skipping update.
