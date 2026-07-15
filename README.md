@@ -14,9 +14,10 @@ The `start_autoMods.bat` script handles server startup, automatic mod updates, a
 
 The script will:
 1. Build a mod list from all `@*` directories
-2. Update mods via SteamCMD by default, or sync from a local workshop cache when configured
-3. Start the DayZ server
-4. Automatically restart when the server exits
+2. Optionally update the DayZ Server game files themselves (off by default, see below)
+3. Update mods via SteamCMD by default, or sync from a local workshop cache when configured
+4. Start the DayZ server
+5. Automatically restart when the server exits
 
 ### Configuration
 
@@ -40,6 +41,24 @@ The script can automatically update mods on each restart using SteamCMD. Set `US
 | `UPDATE_ON_RESTART` | `1` | Enable/disable auto-updates (1/0) |
 | `USE_STEAMCMD` | `1` | Use SteamCMD (1) or existing workshop cache (0) |
 | `WORKSHOP_PATH` | `E:\SteamLibrary\steamapps\workshop\content\221100` | Workshop cache path used when `USE_STEAMCMD=0` |
+
+### DayZ Server Game File Updates
+
+The script can also keep the DayZ Server game files themselves (this folder) up to date, separately from mod updates. Off by default - opt in once you've confirmed it behaves as expected on your machine.
+
+| Variable | Default | Description |
+|----------|---------|--------------|
+| `ENABLE_SERVER_UPDATE` | `0` | Enable/disable auto-updating the server game files (1/0) |
+| `SERVER_APPID` | `223350` | DayZ Server SteamCMD AppID (anonymous login, no game ownership needed) |
+| `VALIDATE_SERVER_FILES` | `0` | Force SteamCMD to re-hash every server file (slow, ~15GB). Leave off for routine restarts; enable occasionally to repair corruption |
+| `SERVER_SOURCE_PATH` | `C:\Program Files (x86)\Steam\steamapps\common\DayZServer` | Local vanilla DayZ Server install to copy from when `USE_STEAMCMD=0` |
+| `SERVER_UPDATE_DIRS` | `dta addons battleye keys sakhal` | Folders synced in local-copy mode |
+| `SERVER_UPDATE_FILES` | `DayZServer_x64.exe *.dll` | Root files synced in local-copy mode |
+
+How it updates depends on `USE_STEAMCMD`, same as mod updates:
+
+- **`USE_STEAMCMD=1` (default):** runs `steamcmd +app_update 223350` against this folder via `force_install_dir`.
+- **`USE_STEAMCMD=0`:** useful on a dev machine where a second SteamCMD login would conflict with an active Steam client login. Instead, robocopies only the known vendor game paths (`SERVER_UPDATE_DIRS`/`SERVER_UPDATE_FILES`) from a local vanilla `DayZServer` install that the Steam client keeps updated. This never touches `config/`, `mpmissions/`, mod folders, or `serverDZ.cfg` - only those explicitly whitelisted paths are copied, and nothing is ever deleted from this folder (no mirroring).
 
 ### Steam Authentication
 
