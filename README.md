@@ -49,7 +49,7 @@ The script can also keep the DayZ Server game files themselves (this folder) up 
 | Variable | Default | Description |
 |----------|---------|--------------|
 | `ENABLE_SERVER_UPDATE` | `0` | Enable/disable auto-updating the server game files (1/0) |
-| `SERVER_APPID` | `223350` | DayZ Server SteamCMD AppID (anonymous login, no game ownership needed) |
+| `SERVER_APPID` | `223350` | DayZ Server SteamCMD AppID. Anonymous login can return `No subscription` depending on the account - uses the same authenticated `STEAM_LOGIN`/`STEAM_PASS` as mod updates (see Steam Authentication below) |
 | `VALIDATE_SERVER_FILES` | `0` | Force SteamCMD to re-hash every server file (slow, ~15GB). Leave off for routine restarts; enable occasionally to repair corruption |
 | `SERVER_SOURCE_PATH` | `C:\Program Files (x86)\Steam\steamapps\common\DayZServer` | Local vanilla DayZ Server install to copy from when `USE_STEAMCMD=0` |
 | `SERVER_UPDATE_DIRS` | `dta addons battleye keys sakhal` | Folders synced in local-copy mode |
@@ -57,12 +57,12 @@ The script can also keep the DayZ Server game files themselves (this folder) up 
 
 How it updates depends on `USE_STEAMCMD`, same as mod updates:
 
-- **`USE_STEAMCMD=1` (default):** runs `steamcmd +app_update 223350` against this folder via `force_install_dir`.
+- **`USE_STEAMCMD=1` (default):** runs `steamcmd +force_install_dir <this folder> +login <STEAM_LOGIN> +app_update 223350` (login args must precede `+app_update` but come after `+force_install_dir` - SteamCMD requires that order). Note `force_install_dir` fetches the entire server tool depot, which brings along some SteamCMD/Valve-owned artifacts alongside your files on first run - `steamapps/` (SteamCMD's own install manifests), `_CommonRedist/` (bundled .NET/VC++ redistributable installers), `server_manager/` (Bohemia's companion GUI tool), `steam_appid.txt`, and stock `mpmissions/dayzOffline.*` mission templates (unused - this server loads `main.hashima`). All of these are already covered by `.gitignore`, so they won't show up in `git status`.
 - **`USE_STEAMCMD=0`:** useful on a dev machine where a second SteamCMD login would conflict with an active Steam client login. Instead, robocopies only the known vendor game paths (`SERVER_UPDATE_DIRS`/`SERVER_UPDATE_FILES`) from a local vanilla `DayZServer` install that the Steam client keeps updated. This never touches `config/`, `mpmissions/`, mod folders, or `serverDZ.cfg` - only those explicitly whitelisted paths are copied, and nothing is ever deleted from this folder (no mirroring).
 
 ### Steam Authentication
 
-Steam credentials are only needed if `USE_STEAMCMD=1`. For authenticated SteamCMD downloads, credentials can be provided via a `.env` file:
+Steam credentials are needed whenever `USE_STEAMCMD=1`, for **both** mod updates and server file updates (`ENABLE_SERVER_UPDATE=1`) - anonymous login works for mods but can fail with `No subscription` for the server tool appid depending on the account, so both update paths log in with the same credentials. Provide them via a `.env` file in the project root:
 
 ```
 USERNAME=your_steam_username
