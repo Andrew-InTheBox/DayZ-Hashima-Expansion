@@ -99,3 +99,46 @@ the root cause.
 **Next step:** after running for a few days, re-run `analyze_ai_lifecycle.py` and re-check the
 `storage_1/expansion/ai/` folder mtimes (same method as above) to see whether the full 24-patrol
 roster is cycling, and whether new patrols start going stale again over time.
+
+## Results after the wipe (checked 2026-07-17)
+
+Note: the two most recent server sessions before this check
+(`DayZServer_x64_2026-07-16_23-53-09.RPT` and `DayZServer_x64_2026-07-17_09-55-04.RPT`, i.e. the
+sessions that actually fall inside the strict last-24h window) had **zero player logins** — no
+`... has connected.` lines in either RPT — so there's no roaming-patrol log activity to check in
+them at all. The most recent session with real player activity is the one before those:
+`DayZServer_x64_2026-07-16_13-50-25.RPT` / `ExpLog_2026-07-16_13-50-51.log` (13:50-23:52 on
+2026-07-16, 3 players connected), with `DayZServer_x64_2026-07-16_03-48-10.RPT` /
+`ExpLog_2026-07-16_03-48-34.log` (03:48-13:50, 1 player) just before it. Re-ran
+`analyze_ai_lifecycle.py` against both.
+
+- 07-16 03:48 session: **20 of 24** roaming patrols spawned.
+- 07-16 13:50 session: **22 of 24** roaming patrols spawned.
+
+Both are a large improvement over the pre-wipe ~11-13 of 24, and support the "stale/corrupt
+persisted save state blocks respawn" theory — resetting that state got most of the roster cycling
+normally again.
+
+Missing patrols were **not** the same set both times (`roaming-hunting-cabins-sw-island` and
+`roaming-west-bay-sw-island` were absent in the 03:48 session but present in the 13:50 one — normal
+session-to-session variance), except for two that were absent in **both**:
+`roaming-police-center-island` and `roaming-se-bridge-middle`. Checked their save folder mtimes —
+both last written 2026-07-15 20:06, i.e. before either of the two sessions checked here, and never
+updated since despite players being active in both.
+
+Looked at what actually happened to those two right before they went stale
+(`ExpLog_2026-07-15_17-44-42.log`): both cycled normally through spawn/despawn twice earlier in
+that same session, then on their last despawn at 20:06:16-17 the log shows `0/1 deceased` — i.e. a
+**clean despawn with the group intact**, not the "fully wiped group never gets saved" case
+described above (that case leaves no save folder at all; these two have one, with a normal
+timestamp). This is a new, more specific data point: at least this instance of "patrol goes stale"
+happened after an ordinary, non-wipe despawn, which weakens the corrupted/wiped-save theory and
+points more toward the spawn trigger itself simply never re-firing for a given patrol instance
+after some point — still not root-caused. No heatmap file newer than 2026-07-14 exists, so player
+proximity to these two patrols' waypoints during the 07-16 sessions couldn't be checked directly.
+
+**Still open:** re-check again in a few more days — if `roaming-police-center-island` and
+`roaming-se-bridge-middle` remain the only two stuck (rather than the count creeping back up toward
+half the roster), that's consistent with "occasional individual patrols get stuck" as a slow-burn
+residual bug, separate from whatever was causing the original ~50%-of-roster failure rate that the
+wipe fixed.
