@@ -142,3 +142,104 @@ proximity to these two patrols' waypoints during the 07-16 sessions couldn't be 
 half the roster), that's consistent with "occasional individual patrols get stuck" as a slow-burn
 residual bug, separate from whatever was causing the original ~50%-of-roster failure rate that the
 wipe fixed.
+
+## Follow-up check (2026-07-18)
+
+Two more sessions had player activity since the last check:
+`DayZServer_x64_2026-07-17_09-55-04.RPT` / `ExpLog_2026-07-17_09-55-28.log` and
+`DayZServer_x64_2026-07-17_19-57-07.RPT` / `ExpLog_2026-07-17_19-57-33.log` (the two sessions in
+between — `07-16_23-53-09` and `07-18_05-59-34`/`07-18_16-01-21` — had no player logins, same
+pattern as before: overnight/unattended sessions produce no roaming-patrol log activity at all).
+
+Both sessions: **21 of 24** roaming patrols spawned — and it's the *same* 21 both times. The 3
+missing were identical in both sessions: `roaming-industrial-se-island`,
+`roaming-police-center-island`, `roaming-se-bridge-middle`.
+
+- `roaming-police-center-island` and `roaming-se-bridge-middle` are the same two that were already
+  stuck as of the previous check (still last-saved 2026-07-15 20:06, unchanged).
+- `roaming-industrial-se-island` is a **new** addition to the stuck set. It spawned fine in the
+  07-16 13:50 session (confirmed in the previous check), then despawned cleanly at 17:48:41 that
+  same session (`0/1 deceased`, group intact — log line confirmed) and has not spawned since,
+  across two subsequent sessions with active players.
+
+All three stuck patrols now share the exact same signature: an ordinary despawn with the group
+still alive (`0/1 deceased`), a normal save-file write at that moment, and then no further spawns
+in any following session. None of them match the "fully wiped group never gets saved" case (that
+leaves no save folder; these have one, with a normal timestamp). This is now a 3-for-3 pattern
+across two check-ins, which weakens the "corrupted/stale save data" theory (these saves aren't
+stale or corrupt-looking, just simply never reloaded) and strengthens the "spawn trigger just stops
+firing for that patrol instance after some point" theory — still not root-caused, but the failure
+mode looks consistent and reproducible now: roughly one additional patrol joins the stuck set every
+1-2 days of active play, independent of despawn cause.
+
+**Also note:** `roaming-harbor-se-island` and `roaming-hunting-cabins-sw-island` show "NO FOLDER"
+in the latest storage check despite spawning in both 07-17 sessions — this is the already-known
+"fully wiped group never saved" path (`eAIDynamicPatrol::Despawn()` skips `Save()` when
+`m_Group.Count()` is 0), not a new stuck-patrol case. They're fine; they just haven't had a
+non-wipe despawn yet to leave a folder behind.
+
+**Next step:** keep checking every session or two. If the stuck count keeps climbing by ~1 patrol
+every session or two, the wipe was a temporary reset rather than a fix, and the next step should be
+finding what actually causes a clean, non-wiped despawn to leave a patrol permanently unspawnable —
+that's now the central open question, not save-data corruption.
+
+### Config diff: stuck vs. working roaming patrols (2026-07-18)
+
+Compared all 24 roaming patrols' entries in `AIPatrolSettings.json` field-by-field (scripted, not
+read manually — the file's too big for that). Every scalar field (`MinDistRadius`, `MaxDistRadius`,
+`DespawnRadius`, `Chance`, `RespawnTime`, `LoadBalancingCategory`, `NumberOfAI`, etc.) is
+**identical across all 24**, stuck or not. `Loadout` is the same (`PlayerSurvivorLoadout`) for all
+24, `Units` is `[]` for all 24, and all 24 have exactly 1 waypoint.
+
+The only field that differs at all is `Behaviour`: 3 patrols use `ROAMING-LOCAL`
+(`roaming-mid-bridge1-nw`, `roaming-mid-bridge2-nw`, `roaming-nw-bridge-far-end`) and the rest use
+plain `ROAMING`. All 3 currently-stuck patrols are `ROAMING`, but so are 18 of the 21 working ones
+— so `Behaviour` doesn't separate stuck from working either. There is no config difference at all
+between the stuck patrols and the working ones.
+
+This rules out a per-patrol config explanation entirely (again — the original investigation already
+ruled out `MinDistRadius`/`MaxDistRadius` distance-based explanations). Combined with the "clean,
+non-wiped despawn followed by permanent silence" signature from the follow-up check, this continues
+to point at something in the engine-side trigger/spawn state machine (per-instance, not
+per-config) rather than anything editable in `AIPatrolSettings.json`.
+
+## Reverse-engineered the save files directly (2026-07-18)
+
+Opened the actual bytes in `storage_1/expansion/ai/<hash>/group.bin` and `.../1/<item>.bin` for the
+3 stuck patrols and several working ones. The format is undocumented but simple enough to reverse:
+`group.bin` is `int32 v1=1, int32 v2=3, float32 x/y/z (position), uint32 constant-format-tag
+(0x06C9AC5B, identical across every file checked, stuck or working — just a version/format marker,
+not diagnostic), int32 name-length, name string, then a list of int32s (looks like inventory slot
+IDs)`. `1.bin` (the per-bot file) independently encodes the same class name and position, confirming
+the position field is real and not a parsing artifact.
+
+**Finding:** the 3 stuck patrols' saved positions are nearly identical to each other —
+
+| patrol | saved position | own waypoint | distance from own waypoint |
+|---|---|---|---|
+| roaming-police-center-island | (2542.34, 14.07, 2527.01) | (2652.56, 8.02, 2536.74) | 110.7m |
+| roaming-se-bridge-middle | (2543.01, 13.94, 2527.73) | (3477.00, 10.60, 1633.00) | 1293.4m |
+| roaming-industrial-se-island | (2542.31, 14.07, 2522.03) | (4125.93, 26.82, 991.55) | 2202.3m |
+
+All three cluster within **1-6m of each other** (pairwise: police-center↔se-bridge 0.99m,
+police-center↔industrial 4.98m, se-bridge↔industrial 5.74m). Checked pairwise distances between
+saved positions across *all* 24 roaming patrols for comparison — the next-closest pair anywhere on
+the map is 28m apart, and most pairs are hundreds to thousands of meters apart (expected, since
+roaming patrols legitimately wander far from their configured waypoint — distance-from-own-waypoint
+alone is *not* anomalous by itself, e.g. `roaming-behind-stadium`, a healthy/working patrol, saves
+2094m from its own waypoint). What's anomalous is 3 *different* patrols, with waypoints 110m-2200m
+apart, saving *the same* location as each other.
+
+Timing rules out a simple same-tick coincidence as the full explanation: `roaming-police-center-island`
+and `roaming-se-bridge-middle` despawned less than a second apart on 2026-07-15 20:06 (plausible
+same-frame data bleed), but `roaming-industrial-se-island` didn't despawn until the next session,
+2026-07-16 17:48 — over 21 hours later — and still wrote essentially the same stray coordinate
+(within 5m). That points to a stale/shared position value surviving across sessions somewhere in the
+mod's persistence path (e.g. a static/cached "last AI group position" that isn't reset between
+different groups' `Save()` calls), rather than corrupted save data — reinforcing the "clean despawn,
+then silently unspawnable" theory from the follow-up check above, now with a concrete (if not fully
+root-caused) mechanism to point to.
+
+Caveat: this is inferred from reverse-engineering an undocumented, proprietary binary format, not
+from source — the field layout guesses (particularly the trailing int32 list) are plausible but
+unconfirmed. The position-clustering result itself is a directly-measured fact, not an inference.
